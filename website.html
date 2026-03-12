@@ -1436,7 +1436,44 @@ Enfocado en encontrar una guía sobre tu vida en general o sobre algún tema en 
 
 <button class="catalogo-btn" onclick="agendarGuias2()">Agenda Aquí</button>
 
-</div>  </section>   <h2 id="lectura-oraculo" class="catalogo-titulo animar-titulo">
+</div> <div class="catalogo-card" style="background-image:url('catalogo333.jpeg');">
+
+<div class="catalogo-titulo-card">Tirada de Conexión Amorosa</div>
+
+<div class="catalogo-frame">
+
+<div class="indicador-scroll">
+Desliza <span>→</span>
+</div>
+
+<div class="catalogo-imagenes">
+
+<img src="lecturaamor1.jpeg" class="catalogo-img">
+<img src="lecturaamor2.jpeg" class="catalogo-img">
+
+</div>
+
+<img src="estrella.png" class="star s1">
+<img src="estrella.png" class="star s2">
+<img src="estrella.png" class="star s3">
+<img src="estrella.png" class="star s4">
+
+</div>
+
+<div class="catalogo-descripcion">
+Lectura enfocada en comprender la energía amorosa que rodea tu vida. Exploramos virtudes y defectos de cada uno, lo que piensan, lo que sienten, de a donde conectan y posible futuro de la conexión para comprender la dinamica del vinculo.
+</div>
+
+<div class="catalogo-precio">
+$10.000 CLP | 13 USD
+</div>
+
+<button class="catalogo-btn" onclick="agendarAmor()">
+Agenda Aquí
+</button>
+
+</div>
+</section>   <h2 id="lectura-oraculo" class="catalogo-titulo animar-titulo">
 Lectura de Oráculo <span class="brillo">🌙</span>  
 </h2>  
 <section class="catalogo-grid">  
@@ -2297,6 +2334,13 @@ const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURICompon
 window.open(url,"_blank");
 }
 
+function agendarAmor(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Lectura del Amor*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+      
 function agendarBloqueos(){
 const numero="56928055904";
 const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Tirada para Bloqueos*¡!";
