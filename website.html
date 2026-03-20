@@ -1612,7 +1612,39 @@ Para explorar qué parte de ti pide sanación y profundizar en ello
 
 <button class="catalogo-btn" onclick="agendarSanacion()">Agenda Aquí</button>
 
-</div>  <div class="catalogo-card" style="background-image:url('catalogo333.jpeg');">  
+</div>  
+  <div class="catalogo-card" style="background-image:url('catalogo333.jpeg');">  
+
+  <div class="catalogo-titulo-card">Consejo de Chamuel</div>  
+
+  <div class="catalogo-frame">  
+
+    <div class="indicador-scroll">  
+      Desliza <span>→</span>  
+    </div>  
+
+    <div class="catalogo-imagenes">  
+      <img src="chamuel1.png" class="catalogo-img">  
+      <img src="chamuel2.png" class="catalogo-img">  
+    </div>  
+
+    <img src="estrella.png" class="star s1">  
+    <img src="estrella.png" class="star s2">  
+    <img src="estrella.png" class="star s3">  
+    <img src="estrella.png" class="star s4">  
+
+  </div>  
+
+  <div class="catalogo-descripcion">  
+    Enfocado en ver el estado actual de tu corazón y recibiendo un consejo del Arcángel Chamuel para el amor  
+  </div>  
+
+  <div class="catalogo-precio">$10.000 CLP | 13 USD</div>  
+
+  <button class="catalogo-btn" onclick="agendarChamuel()">Agenda Aquí</button>  
+
+</div>
+  <div class="catalogo-card" style="background-image:url('catalogo333.jpeg');">  
 
 <div class="catalogo-titulo-card">¿Qué sigo trayendo Conmigo?</div>  
 
@@ -2295,6 +2327,13 @@ carousel.innerHTML+=`
 function enviarWhatsApp(){
 const numero="56928055904";
 const mensaje="Hola, Scar 🦋🌙. Quisiera agendar un servicio¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+function agendarChamuel(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Consejo de Chamuel*¡!";
 const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
 window.open(url,"_blank");
 }
