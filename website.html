@@ -232,7 +232,7 @@ text-shadow:
 0 0 6px rgba(120,170,220,0.9),
 0 0 15px rgba(120,170,220,0.9),
 0 0 20px rgba(25,87,145,0.8),
-0 0 26px rgba(25,87,145,0.6);
+0 0 26px rgba(25,87,145,0.5);
 min-height:50px;
 }
 
@@ -281,21 +281,49 @@ text-shadow:
 0 0 6px rgba(120,170,220,0.9),
 0 0 15px rgba(120,170,220,0.9),
 0 0 20px rgba(25,87,145,0.8),
-0 0 26px rgba(25,87,145,0.6);
+0 0 26px rgba(25,87,145,0.5);
 min-height:60px;
 }
 
 .card button{
 padding:8px 24px;
 border-radius:22px;
-border:1.5px solid #39548C;
+border:1.5px solid #d9dcde;
 background:transparent;
 font-family:'NotoEthiopic';
-color:#39548C;
+color:#d9dcde;
 cursor:pointer;
-box-shadow:0 3px 8px rgba(0,0,0,0.3);
+
+/* glow del texto */
+text-shadow:
+0 0 6px rgba(120,170,220,0.9),
+0 0 15px rgba(120,170,220,0.9),
+0 0 20px rgba(25,87,145,0.8),
+0 0 26px rgba(25,87,145,0.5);
+
+/* glow del borde */
+box-shadow:
+0 0 6px rgba(237,239,240,0.6),
+0 0 18px rgba(237,239,240,0.4),
+0 0 35px rgba(237,239,240,0.3);
+
+transition: all 0.15s ease;
 }
 
+.card button:hover{
+box-shadow:
+0 0 8px rgba(120,170,220,0.9),
+0 0 18px rgba(120,170,220,0.7),
+0 0 28px rgba(25,87,145,0.5);
+}
+
+.card button:active{
+background:rgba(217,220,222,0.2);
+transform:scale(0.96);
+box-shadow:
+0 0 4px rgba(120,170,220,0.4);
+}
+  
 /* ================= OJITO ================= */
 
 .ojito-section{
