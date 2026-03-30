@@ -1,0 +1,1149 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mariposa Azul</title>
+
+<style>
+
+/* ================= FUENTES ORIGINALES ================= */
+
+@font-face {
+  font-family: 'Halja';
+  src: url('HALJA-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoEthiopic';
+  src: url('NotoSerifEthiopic-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('LobsterTwo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Glacial Indifference';
+src: url('GlacialIndifference-Regular.otf') format('opentype');
+}
+  
+/* ================= BASE ================= */
+
+body{
+  margin:0;
+  padding:0;
+  font-family:'NotoEthiopic', serif;
+}
+
+/* ================= BODY ================= */
+
+body{
+margin:0;
+padding:0;
+font-family:'NotoEthiopic',serif;
+overflow-x:hidden;
+background-color:#7892B3;
+}
+
+/* ================= ESTRELLAS CAPA 1 ================= */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+
+background-image:
+
+/* ⭐ GRANDES (10) */
+radial-gradient(circle at 5% 10%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 15% 30%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 25% 60%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 35% 20%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 45% 75%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+
+radial-gradient(circle at 55% 40%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 65% 15%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 75% 55%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 85% 25%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 95% 70%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px);
+
+animation: titilarA 2s ease-in-out infinite alternate;
+}
+
+/* ================= ESTRELLAS CAPA 2 ================= */
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+
+background-image:
+
+radial-gradient(circle at 10% 80%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 20% 50%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 30% 10%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 40% 65%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 50% 20%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+
+radial-gradient(circle at 60% 85%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 70% 35%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 80% 60%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 90% 15%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 15% 5%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+
+radial-gradient(circle at 25% 85%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 35% 45%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 45% 5%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 55% 55%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 65% 95%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px);
+
+animation: titilarB 3s ease-in-out infinite alternate;
+}
+
+/* ================= ESTRELLAS CAPA 3 ================= */
+
+.estrellas-extra{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+
+background-image:
+radial-gradient(circle at 75% 5%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 85% 95%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 95% 40%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 5% 95%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 18% 60%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+
+radial-gradient(circle at 28% 35%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 38% 85%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 48% 30%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 58% 75%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 68% 10%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+
+radial-gradient(circle at 78% 50%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 88% 20%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 98% 80%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 12% 15%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 22% 75%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+
+radial-gradient(circle at 8% 22%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 14% 78%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 22% 48%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 30% 70%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 38% 18%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+
+radial-gradient(circle at 46% 82%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 54% 28%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 62% 66%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 70% 12%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 78% 52%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+
+radial-gradient(circle at 86% 34%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 94% 88%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 18% 6%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 44% 6%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 66% 92%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px);
+
+animation: titilarC 4s ease-in-out infinite alternate;
+}
+  
+/* ================= ANIMACIONES ================= */
+
+@keyframes titilarA{
+0%{ opacity:0.4; }
+50%{ opacity:1; }
+100%{ opacity:0.6; }
+}
+
+@keyframes titilarB{
+0%{ opacity:0.6; }
+50%{ opacity:0.9; }
+100%{ opacity:0.3; }
+}
+
+@keyframes titilarC{
+0%{ opacity:0.5; }
+50%{ opacity:1; }
+100%{ opacity:0.4; }
+}
+
+/* ================= HERO MINI ================= */
+
+.hero-mini{
+  min-height:15vh;
+
+  background-image:
+  linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+  url('fondo 2.jpeg');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  padding:30px 20px;
+  color:white;
+}
+
+/* TÍTULO (igual estilo que el original) */
+.hero-title{
+  font-family:'Halja';
+  font-size:56px;
+  font-weight:300;
+  letter-spacing:1px;
+
+  text-shadow:
+  0 0 6px rgba(255,255,255,0.8),
+  0 0 18px rgba(255,255,255,0.5);
+
+  margin:0;
+}
+
+/* SUBTÍTULO (ajustado al estilo real) */
+.hero-subtitle{
+  font-size:15px;
+  margin-top:2px;
+}
+
+/* ================= TITULO SECCION ================= */
+
+.fondo-celeste{
+padding:40px 0 20px 0;
+}
+
+.contenido-celeste{
+max-width:1200px;
+margin:0 auto;
+display:flex;
+justify-content:center;
+align-items:center;
+  text-align:center;
+  
+}
+
+.contenido-celeste{
+position:relative;
+}
+
+@media (max-width:768px){
+
+.titulo-simple h2{
+font-size:42px;
+}
+
+}
+  
+.contenido-celeste h2{
+font-family:'Halja';
+font-size:60px;
+font-weight:300;
+
+color:#195791;
+
+text-align:center;
+margin:20px 0 25px 0;
+
+text-shadow:
+0 0 6px rgba(120,170,220,0.9),
+0 0 14px rgba(120,170,220,0.8),
+0 0 25px rgba(25,87,145,0.6),
+0 0 50px rgba(25,87,145,0.4);
+
+opacity:0;
+animation: subirSuave 1s ease forwards, titileoSuave 2s ease-in-out infinite alternate;
+animation-delay:0.8s;
+}
+
+..titulo-simple{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.titulo-simple h2{
+margin:0 auto;
+  width:auto;
+font-family:'Halja';
+font-size:60px;
+color:#195791;
+}
+
+.titulo-simple img{
+width:100px;
+height:auto;
+  position:static !important;
+float:none !important;
+animation:gatoFlotando 3s ease-in-out infinite;
+  filter:drop-shadow(0 0 4px rgba(255,255,255,0.6));
+  align-items:center;
+}
+
+@keyframes gatoFlotando{
+0%{
+transform:translateY(0px) scale(1) rotate(0deg);
+}
+50%{
+transform:translateY(-6px) scale(1.05) rotate(1deg);
+}
+100%{
+transform:translateY(0px) scale(1) rotate(-1deg);
+}
+}
+
+  
+/* ================= ANIMACION GLOW ================= */
+
+@keyframes subirSuave{
+0%{
+opacity:0;
+transform:translateY(25px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+  
+@keyframes titileoSuave{
+0%{
+text-shadow:
+0 0 6px rgba(120,170,220,0.6),
+0 0 14px rgba(120,170,220,0.5),
+0 0 25px rgba(25,87,145,0.4),
+0 0 50px rgba(25,87,145,0.3);
+}
+
+50%{
+text-shadow:
+0 0 10px rgba(120,170,220,1),
+0 0 22px rgba(120,170,220,1),
+0 0 29px rgba(25,87,145,0.9),
+0 0 60px rgba(25,87,145,0.7);
+}
+
+100%{
+text-shadow:
+0 0 6px rgba(120,170,220,0.6),
+0 0 14px rgba(120,170,220,0.5),
+0 0 25px rgba(25,87,145,0.4),
+0 0 50px rgba(25,87,145,0.3);
+}
+}
+
+.brillo{
+display:inline-block;
+animation:brillar 1.5s ease-in-out infinite;
+}
+
+@keyframes brillar{
+0%{ transform:scale(1); filter:drop-shadow(0 0 2px #ffffff); }
+50%{ transform:scale(1.3); filter:drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 18px #ffffff); }
+100%{ transform:scale(1); filter:drop-shadow(0 0 2px #ffffff); }
+} 
+
+@media(max-width:768px){
+
+  .contenido-celeste h2{
+    text-align:left;
+    margin-left:40px;
+  }
+
+}
+
+  @media (max-width:768px){
+
+.titulo-simple{
+width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.titulo-simple h2{
+font-size:52px;       /* o el tamaño que ya elegiste */
+width:100%;
+text-align:center;
+margin:0 auto;
+}
+
+}
+
+  @media (max-width:768px){
+
+.titulo-simple img{
+width:110px;
+}
+
+}
+/*=================TARJETA====================================*/
+/* ================= GRID ================= */
+
+.catalogo-grid{
+max-width:1200px;
+margin:17px auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+@media(max-width:900px){
+.catalogo-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+.catalogo-grid{
+grid-template-columns:1fr;
+padding:0 20px;
+}
+}
+
+/* ================= CARD ================= */
+
+.catalogo-card{
+background-size:cover;
+background-position:center;
+padding:30px;
+border-radius:28px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.25),
+inset 0 0 40px rgba(255,255,255,0.15);
+}
+
+/* ================= TITULO ================= */
+
+.catalogo-titulo-card{
+font-family:'Lobster';
+font-weight:bold;
+font-size:32px;
+color:white;
+text-shadow:2px 3px 6px rgba(0,0,0,0.4);
+margin-bottom:26px;
+  text-align:center; 
+}
+
+/* ================= FRAME ================= */
+
+.catalogo-frame{
+position:relative;
+min-width:100%;
+aspect-ratio:1/1;
+border:2px solid #e6e6e6;
+border-radius:22px;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 0 10px #f5f5f5,0 0 25px #d9d9d9;
+}
+
+/* ================= SCROLL ================= */
+
+.catalogo-imagenes{
+display:flex;
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+scroll-behavior:smooth;
+
+width:100%;
+height:100%;
+}
+
+.catalogo-imagenes::-webkit-scrollbar{
+display:none;
+}
+
+.catalogo-img{
+flex: 0 0 100%;
+width:100%;
+height:100%;
+object-fit:contain;
+border-radius:18px;
+scroll-snap-align:start;
+}
+
+/* ================= TEXTO SCROLL ================= */
+
+.indicador-scroll{
+position:absolute;
+top:-28px;
+right:15px;
+font-family:'NotoEthiopic',serif;
+font-size:13px;
+color:white;
+opacity:0.85;
+letter-spacing:1px;
+display:flex;
+align-items:center;
+gap:6px;
+text-shadow:0 2px 6px rgba(0,0,0,0.4);
+}
+
+.indicador-scroll span{
+font-size:16px;
+}
+/* ================= ESTRELLAS DECORATIVAS ================= */
+
+
+.image-frame img.main{
+width:88%;
+height:88%;
+object-fit:cover;
+border-radius:18px;
+}
+
+.image-frame{
+position:relative;
+width:85%;
+aspect-ratio:1/1;
+margin-bottom:16px;
+border:2px solid #9ea4b3;
+border-radius:22px;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:
+0 0 10px #c5c9d3,
+0 0 25px #9ea4b3;
+}
+.star{
+position:absolute;
+width:28px;
+filter:
+drop-shadow(0 0 6px #ffffff)
+drop-shadow(0 0 14px #cfd3db);
+}
+
+.star.s1{ top:-14px; left:15%; }
+.star.s2{ bottom:-16px; right:18%; }
+.star.s3{ top:45%; left:-16px; }
+.star.s4{ bottom:30%; right:-14px; }
+
+/* ================= DESCRIPCION ================= */
+
+.catalogo-descripcion{
+font-family:'NotoEthiopic';
+font-size:15px;
+color:white;
+
+text-align:center;
+
+margin:20px 0;
+
+text-shadow:0 2px 6px rgba(0,0,0,0.4);
+}
+
+.descripcion-pequeño{
+font-size:13px;
+}
+
+.descripcion-grande{
+font-size:19px;
+}
+
+.descripcion-mas-grande{
+font-size:22px;
+}
+/* ================= PRECIO ================= */
+
+.catalogo-precio{
+font-family:'Lobster';
+font-size:30px;
+color:white;
+
+margin:10px 0 20px;
+
+text-shadow:0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* ================= BOTON ================= */
+
+.catalogo-btn{
+background:transparent;
+color:white;
+
+border:2px solid rgba(255,255,255,0.8);
+border-radius:30px;
+
+padding:10px 30px;
+
+cursor:pointer;
+
+font-family:'NotoEthiopic';
+
+transition:0.3s;
+}
+
+.catalogo-btn:hover{
+background:rgba(255,255,255,0.15);
+}
+
+/* ================= HERO FINAL ================= */
+
+.cierre-final{
+background-image:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url('fondo 2.jpeg');
+background-size:cover;
+background-position:center;
+padding:20px 0px;
+margin-top:110px;
+  border-radius:0;
+}
+
+.cierre-contenido{
+max-width:800px;
+margin:0 auto;
+}
+
+.sanemos{
+font-family:'HALJA'; /* la misma que usas en títulos góticos */
+font-size:45px;
+color:#cfd3da; /* plateado */
+text-align:left;
+  margin-top:5px;
+margin-bottom:10px;
+}
+
+.encaminemos{
+font-family:'NotoEthiopic';
+font-size:18px;
+color:#e2e5ea; /* plateado suave */
+text-align:left;
+font-weight:normal;
+margin:0;
+}
+
+.animar-titulo{
+opacity:0;
+transform:translateY(25px);
+transition:all 0.9s ease;
+}
+
+.animar-titulo.visible{
+opacity:1;
+transform:translateY(0);
+}
+  
+@media (max-width:768px){
+
+.cierre-final{
+width:100%;
+padding:12px 0;           /* controla lo delgado en móvil */
+background-size:cover;    /* mantiene la franja completa */
+background-position:center;
+}
+
+.cierre-contenido{
+width:100%;
+padding-left:20px;        /* margen interno para que el texto no pegue al borde */
+padding-right:20px;
+box-sizing:border-box;
+}
+
+.sanemos{
+font-size:clamp(24px,15vw,38px);   /* se adapta al ancho */
+  
+}
+
+.encaminemos{
+font-size:clamp(14px,3vw,18px);   /* más pequeño que el título */
+}
+}
+.footer-contacto{
+background:#ffffff;
+padding:25px 0 30px 0;
+}
+
+.footer-contenido{
+max-width:1100px;
+margin:0 auto;
+padding-left:40px;
+}
+
+.footer-titulo{
+font-family:'Lobster';
+font-size:28px;
+color:#A28329;
+
+text-shadow:
+0 1px 0 rgba(120,90,20,0.4),
+0 0 3px rgba(162,131,41,0.8),
+0 0 8px rgba(162,131,41,0.5);
+
+margin-bottom:20px;
+}
+
+.footer-redes{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.footer-linea{
+display:flex;
+align-items:center;
+gap:12px;
+font-family:'Glacial Indifference';
+font-size:16px;
+color:#444444; /* gris oscuro elegante */
+}
+
+.footer-linea img{
+width:16px;
+}
+
+.icono-whatsapp{
+width:14px;
+}
+
+@media (max-width:768px){
+
+.footer-contenido{
+padding-left:20px;
+}
+
+.footer-titulo{
+font-size:24px;
+}
+
+.footer-linea{
+font-size:15px;
+}
+
+}
+}
+
+.carrusel-wrapper{
+  width:100%;
+  max-width:600px;
+  margin:40px auto;
+  padding:7px 20px 10px 20px;
+  border-radius:30px;
+  position:relative;
+}
+
+/* MARCO */
+.carrusel-wrapper::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:40%;
+  bottom:0;
+  height:70%;
+  border-radius:20px;
+  border:2px solid #195791;
+
+  box-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5),
+  inset 0 0 6px rgba(120,170,220,1),
+  inset 0 0 8px rgba(120,170,220,0.9),
+  inset 0 0 18px rgba(120,170,220,0.7),
+  inset 0 0 28px rgba(25,87,145,0.5);
+
+  z-index:1;
+}
+
+/* TRACK */
+.carrusel-track{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  z-index:2;
+  position:relative;
+}
+
+/* GRUPOS */
+.grupo{
+  min-width:100%;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  scroll-snap-align:start;
+}
+
+/* IMÁGENES */
+.grupo img{
+  width:45%;
+  border-radius:20px;
+  object-fit:cover;
+}
+
+/* DOTS */
+.dots{
+  text-align:center;
+  margin-top:15px;
+}
+
+.dot{
+  height:10px;
+  width:10px;
+  margin:0 5px;
+  background:#d9dcde;
+  border-radius:50%;
+  display:inline-block;
+  opacity:0.5;
+}
+
+.dot.active{
+  opacity:1;
+}
+
+/* TITULO */
+.titulo-lo-mas-pedido{
+  text-align:center;
+  font-family:'Lobster';
+  color:#d9dcde;
+  margin-top:10px;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5);
+}
+
+.carrusel-wrapper{
+  width:100%;
+  max-width:600px;
+  margin:50px auto;
+  padding:7px 20px 10px 20px;
+  border-radius:30px;
+  position:relative;
+}
+
+.carrusel-wrapper::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:40%;
+  bottom:0;
+  height:70%;
+
+  border-radius:20px;
+  border:2.5px solid #195791;
+
+  box-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4),
+
+  inset 0 0 6px rgba(120,170,220,0.9),
+  inset 0 0 14px rgba(120,170,220,0.8),
+  inset 0 0 25px rgba(25,87,145,0.6),
+  inset 0 0 50px rgba(25,87,145,0.4);
+
+  z-index:1;
+}
+
+.carrusel-track{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+}
+
+.carrusel-track::-webkit-scrollbar{
+  display:none;
+}
+
+.grupo{
+  min-width:100%;
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  scroll-snap-align:center;
+}
+
+.grupo img{
+  width:45%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:18px;
+  position:relative;
+  z-index:2;
+}
+
+.dots{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:23px;
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.4);
+}
+
+.dot.active{
+  background:#d9dcde;
+  box-shadow:0 0 8px #195791;
+}
+
+.titulo-lo-mas-pedido{
+  text-align:center;
+  font-family:'Lobster';
+  color:#d9dcde;
+  margin-top:7px;
+  margin-bottom:57px;
+  font-size:22px;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5);
+}
+
+@media (max-width: 768px){
+
+  .carrusel-wrapper{
+    max-width:75%;
+    padding:10px;
+    margin-top:45px;
+  }
+
+  .grupo{
+    gap:10px;
+  }
+
+  .grupo img{
+    width:42%;
+  }
+
+}
+  
+</style>
+</head>
+
+<body>
+  
+<div class="estrellas-extra"></div>
+  
+<section class="hero-mini">
+
+  <h1 class="hero-title">Mariposa Azul</h1>
+  <div class="hero-subtitle">
+    Terapias Holísticas, Tarot Evolutivo y Rituales
+  </div>
+
+</section>
+
+<section class="fondo-celeste">
+  <div class="contenido-celeste">
+     <div class="titulo-simple">
+  <h2>Radiestesia  </h2>
+  <img src="gatoderecha.png">
+  
+</div>
+    
+     </div>
+</section>
+  
+   <section class="catalogo-grid"> 
+     <div class="catalogo-card" style="background-image:url('catalogo333.jpeg');">
+
+    <div class="catalogo-titulo-card">
+    Cuales son mis dones espirituales
+    </div>
+
+    <div class="catalogo-frame">
+
+        <img src="pendulo1.jpeg" class="catalogo-img">
+
+        <img src="estrella.png" class="star s1">
+        <img src="estrella.png" class="star s2">
+        <img src="estrella.png" class="star s3">
+        <img src="estrella.png" class="star s4">
+
+    </div>
+
+    <div class="catalogo-descripcion">
+    A través de la radiestesia abrimos tu campo energético para saber cuales son tus dones, que tan desarrollado esta, que puede estar bloqueando cada una de tus habilidades y cuales son los 3 rayos cósmicos que predominan mas en tu campo energético.
+    <br><br>
+    <strong>La información es entregada vía CHAT+AUDIOS.</strong>
+    </div>
+
+    <div class="catalogo-precio">
+    $16.000 CLP | 20 USD
+    </div>
+
+    <button class="catalogo-btn" onclick="agendarDones()">
+    Agenda Aquí
+    </button>
+
+</div>
+<div class="catalogo-card" style="background-image:url('catalogo333.jpeg');">
+
+    <div class="catalogo-titulo-card">
+    Quienes son mis Guias
+    </div>
+
+    <div class="catalogo-frame">
+
+        <img src="pendulo2.jpeg" class="catalogo-img">
+
+        <img src="estrella.png" class="star s1">
+        <img src="estrella.png" class="star s2">
+        <img src="estrella.png" class="star s3">
+        <img src="estrella.png" class="star s4">
+
+    </div>
+
+    <div class="catalogo-descripcion">
+    Acá veremos quienes son los seres que te acompañan y que siempre velan por tu mas alto bien, si hay ancestros familiares, algún arcángel, maestros ascendidos, animales de poder y todo lo que salga.
+    <br><br>
+    <strong>La información es entregada vía CHAT+AUDIOS.</strong>
+    </div>
+
+    <div class="catalogo-precio">
+    $14.000 CLP | 17 USD
+    </div>
+
+    <button class="catalogo-btn" onclick="agendarGuiasRadiestesia()">
+    Agenda Aquí
+    </button>
+
+</div>
+</section>
+
+<!-- CARRUSEL LO MÁS PEDIDO -->
+<div class="carrusel-wrapper">
+
+  <div class="carrusel-track">
+
+    <div class="grupo">
+      <img src="tarotespecifico1.jpeg">
+      <img src="chamuel1.png">
+    </div>
+
+    <div class="grupo">
+      <img src="bloqueos1.jpeg">
+      <img src="reiki1.jpeg">
+    </div>
+
+    <div class="grupo">
+      <img src="limpia1.jpeg">
+      <img src="sanacionutero.png">
+    </div>
+
+  </div>
+
+</div>
+
+<!-- DOTS FUERA -->
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div class="titulo-lo-mas-pedido">
+  Te podria interesar¡!
+</div>
+  
+<section class="cierre-final">
+  <div class="cierre-contenido">
+    <h2 class="sanemos">¿Sanemos Juntxs?</h2>
+    <p class="encaminemos">Encaminemos tu proceso</p>
+  </div>
+</section>
+  <section class="footer-contacto">
+
+  <div class="footer-contenido">
+
+    <div class="footer-titulo">
+      Encuéntrame en:
+    </div>
+
+    <div class="footer-redes">
+
+      <div class="footer-linea">
+        <img src="instagram.png" alt="Instagram">
+        <span>@mariposaazul__</span>
+      </div>
+
+      <div class="footer-linea">
+        <img src="tiktok.png" alt="TikTok">
+        <span>@mariposaazul.__</span>
+      </div>
+
+      <div class="footer-linea">
+<img src="whatsapp.png" class="icono-whatsapp" alt="WhatsApp">
+        <span>+56 9 2805 5904</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  
+<script>
+function agendarDones(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Cuales son mis dones espirituales*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+function agendarGuiasRadiestesia(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Quienes son mis Guias*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+</script>
+<script>
+const track = document.querySelector('.carrusel-track');
+const dots = document.querySelectorAll('.dot');
+
+track.addEventListener('scroll', () => {
+  const index = Math.round(track.scrollLeft / track.clientWidth);
+
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  if (dots[index]) {
+    dots[index].classList.add('active');
+  }
+});
+</script>
+</body>
+</html>
