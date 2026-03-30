@@ -297,6 +297,22 @@ animation: flotarDer 5s ease-in-out infinite alternate;
 100%{ transform:translateY(5px) rotate(1deg); }
 }
 
+.titulo-ojito{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px; /* 👈 ajusta distancia */
+}
+
+.titulo-ojito img{
+width:70px;
+height:auto;
+}
+
+.titulo-ojito h2{
+margin:0;
+}
+  
 /* ================= ANIMACION GLOW ================= */
 
 @keyframes subirSuave{
@@ -718,10 +734,13 @@ font-size:15px;
 
 <section class="fondo-celeste">
   <div class="contenido-celeste">
+      <div class="titulo-ojito">
       <img src="gatoizquierda.png" class="imagen-flotante izq">
-  <img src="gatoderecha.png" class="imagen-flotante der">
-    <h2>Tarot Terapéutico </h2>
+  <h2>Tarot Terapéutico </h2>
+        <img src="gatoderecha.png" class="imagen-flotante der">
+   
   </div>
+     </div>
 </section>
   
   <section class="catalogo-grid">  <div class="catalogo-card" style="background-image:url('catalogo333.jpeg');">  <div class="catalogo-titulo-card">Preguntas Específicas</div>  <div class="catalogo-frame">  
