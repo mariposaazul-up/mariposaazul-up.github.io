@@ -525,7 +525,86 @@ transform:scale(0.95);
 box-shadow:
 0 0 3px rgba(120,170,220,0.3);
 }
-  
+
+/* WRAPPER GENERAL */
+.carrusel-wrapper{
+  width:100%;
+  max-width:900px;
+  margin:40px auto;
+  padding:20px;
+  border-radius:30px;
+  position:relative;
+
+  box-shadow:
+  0 0 10px #195791,
+  0 0 20px #195791,
+  0 0 40px rgba(25,87,145,0.6);
+}
+
+/* SCROLL */
+.carrusel-track{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+}
+
+.carrusel-track::-webkit-scrollbar{
+  display:none;
+}
+
+/* GRUPO DE 2 IMÁGENES */
+.grupo{
+  min-width:100%;
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  scroll-snap-align:center;
+}
+
+/* IMÁGENES */
+.grupo img{
+  width:45%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+/* DOTS */
+.dots{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:15px;
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.4);
+}
+
+.dot.active{
+  background:#d9dcde;
+  box-shadow:0 0 8px #195791;
+}
+
+/* TÍTULO */
+.titulo-lo-mas-pedido{
+  text-align:center;
+  font-family:'Lobster';
+  color:#d9dcde;
+  margin-top:10px;
+  font-size:22px;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5);
+}
 /* ================= OJITO ================= */
 
 .ojito-section{
@@ -1600,6 +1679,39 @@ font-size:15px;
   necesites"
   </p>
   <div class="firma-scar">Atte: Scar 🥀</div>
+</div>
+  <!-- CARRUSEL LO MÁS PEDIDO -->
+<div class="carrusel-wrapper">
+
+  <div class="carrusel-track" id="carruselTrack">
+
+    <div class="grupo">
+      <img src="tarotespecifico1.jpeg">
+      <img src="general1.jpeg">
+    </div>
+
+    <div class="grupo">
+      <img src="general2.jpeg">
+      <img src="pendulo1.jpeg">
+    </div>
+
+    <div class="grupo">
+      <img src="limpia1.jpeg">
+      <img src="utero.jpeg">
+    </div>
+
+  </div>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</div>
+
+<div class="titulo-lo-mas-pedido">
+  Lo más pedido
 </div>
   <section class="ojito-section">    
 <div class="ojito-title">    
@@ -2938,6 +3050,19 @@ const enfin = document.querySelector('.animar-enfin');
 if(enfin){
 observer.observe(enfin);
 }
+
+const track = document.getElementById('carruselTrack');
+const dots = document.querySelectorAll('.dot');
+
+track.addEventListener('scroll', () => {
+  const index = Math.round(track.scrollLeft / track.offsetWidth);
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+});
+
+      
 </script>  </body>
 
 </html>
