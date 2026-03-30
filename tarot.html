@@ -317,7 +317,7 @@ max-width:1200px;
 margin:40px auto;
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:40px;
+gap:28px;
 }
 
 @media(max-width:900px){
@@ -702,7 +702,42 @@ Agenda Aquí
 <script>
 function agendarEspecificas(){
 const numero="56928055904";
-const mensaje="Hola ,Scar ðŸ¦‹ðŸŒ™. Quisiera agendar este servicio de *Preguntas EspecÃ­ficas*Â¡!";
+const mensaje="Hola ,Scar 🦋🌙. Quisiera agendar este servicio de *Preguntas Específicas*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+function agendarGeneral1(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Lectura General I*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+function agendarGeneral2(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Lectura General II*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+function agendarGuias(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Mensajes de tus Guías*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+function agendarGuias2(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Mensajes de tus Guías 2*¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+
+function agendarAmor(){
+const numero="56928055904";
+const mensaje="Hola, Scar 🦋🌙. Quisiera agendar el servicio de *Tirada de Conexión Amorosa*¡!";
 const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
 window.open(url,"_blank");
 }
