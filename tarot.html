@@ -516,7 +516,104 @@ transition:0.3s;
 .catalogo-btn:hover{
 background:rgba(255,255,255,0.15);
 }
-  
+
+/* ================= HERO FINAL ================= */
+
+.cierre-final{
+width:100%;
+min-height:220px;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url('fondo 2.jpeg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+}
+
+.cierre-contenido{
+max-width:1200px;
+margin:0 auto;
+padding:40px 20px;
+}
+
+.sanemos{
+font-family:'Halja';
+font-size:52px;
+color:white;
+
+margin:0 0 10px 0;
+
+text-shadow:
+0 0 8px rgba(255,255,255,0.8),
+0 0 20px rgba(255,255,255,0.4);
+}
+
+.encaminemos{
+font-family:'NotoEthiopic';
+font-size:22px;
+color:white;
+
+margin:0;
+}
+
+/* ================= FOOTER CONTACTO ================= */
+
+.footer-contacto{
+background:#f5f5f5;
+padding:50px 20px;
+}
+
+.footer-contenido{
+max-width:1200px;
+margin:0 auto;
+}
+
+.footer-titulo{
+font-family:'Lobster';
+font-size:38px;
+
+color:#bfa046;
+
+margin-bottom:30px;
+
+text-shadow:
+0 0 6px rgba(191,160,70,0.5),
+0 0 12px rgba(191,160,70,0.3);
+}
+
+/* ================= REDES ================= */
+
+.footer-redes{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.footer-linea{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.footer-linea img{
+width:28px;
+opacity:0.7;
+}
+
+.icono-whatsapp{
+width:26px;
+}
+
+.footer-linea span{
+font-family:'NotoEthiopic';
+font-size:20px;
+color:#444;
+}
+
 </style>
 </head>
 
@@ -697,9 +794,45 @@ Agenda Aquí
 </button>
 
 </div>
-
 </section>
 
+<section class="cierre-final">
+  <div class="cierre-contenido">
+    <h2 class="sanemos">¿Sanemos Juntxs?</h2>
+    <p class="encaminemos">Encaminemos tu proceso</p>
+  </div>
+</section>
+  <section class="footer-contacto">
+
+  <div class="footer-contenido">
+
+    <div class="footer-titulo">
+      Encuéntrame en:
+    </div>
+
+    <div class="footer-redes">
+
+      <div class="footer-linea">
+        <img src="instagram.png" alt="Instagram">
+        <span>@mariposaazul__</span>
+      </div>
+
+      <div class="footer-linea">
+        <img src="tiktok.png" alt="TikTok">
+        <span>@mariposaazul.__</span>
+      </div>
+
+      <div class="footer-linea">
+<img src="whatsapp.png" class="icono-whatsapp" alt="WhatsApp">
+        <span>+56 9 2805 5904</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  
 <script>
 function agendarEspecificas(){
 const numero="56928055904";
