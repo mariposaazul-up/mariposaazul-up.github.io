@@ -240,6 +240,10 @@ justify-content:center;
 align-items:center;
 }
 
+.contenido-celeste{
+position:relative;
+}
+  
 .contenido-celeste h2{
 font-family:'Halja';
 font-size:60px;
@@ -259,6 +263,38 @@ text-shadow:
 opacity:0;
 animation: subirSuave 1s ease forwards, titileoSuave 2s ease-in-out infinite alternate;
 animation-delay:0.8s;
+}
+
+.imagen-flotante{
+position:absolute;
+width:90px;
+pointer-events:none;
+}
+
+/* izquierda */
+.imagen-flotante.izq{
+left:18%;
+top:10%;
+animation: flotarIzq 4s ease-in-out infinite alternate;
+}
+
+/* derecha */
+.imagen-flotante.der{
+right:18%;
+top:15%;
+animation: flotarDer 5s ease-in-out infinite alternate;
+}
+
+@keyframes flotarIzq{
+0%{ transform:translateY(0px) rotate(-2deg); }
+50%{ transform:translateY(-6px) rotate(2deg); }
+100%{ transform:translateY(4px) rotate(-1deg); }
+}
+
+@keyframes flotarDer{
+0%{ transform:translateY(0px) rotate(2deg); }
+50%{ transform:translateY(-8px) rotate(-2deg); }
+100%{ transform:translateY(5px) rotate(1deg); }
 }
 
 /* ================= ANIMACION GLOW ================= */
@@ -682,7 +718,9 @@ font-size:15px;
 
 <section class="fondo-celeste">
   <div class="contenido-celeste">
-    <h2>Tarot Terapéutico <span class="brillo">✨</span></h2>
+      <img src="gatoizquierda.png" class="imagen-flotante izq">
+  <img src="gatoderecha.png" class="imagen-flotante der">
+    <h2>Tarot Terapéutico </h2>
   </div>
 </section>
   
