@@ -220,13 +220,21 @@ animation: titilarC 4s ease-in-out infinite alternate;
 
 /* ================= TITULO SECCION ================= */
 
-.titulo-seccion{
+.fondo-celeste{
+padding:40px 0 20px 0;
+}
+
+.contenido-celeste{
+max-width:1300px;
+margin:0 auto;
+text-align:center;
+}
+
+.contenido-celeste h2{
 font-family:'Halja';
 font-size:60px;
 font-weight:300;
-text-align:center;
-margin:40px 0;
-
+margin:20px 0 25px 0;
 color:#195791;
 
 text-shadow:
@@ -235,11 +243,24 @@ text-shadow:
 0 0 25px rgba(25,87,145,0.6),
 0 0 50px rgba(25,87,145,0.4);
 
-animation: titileoSuave 2s ease-in-out infinite alternate;
+opacity:0;
+animation: subirSuave 1s ease forwards, titileoSuave 2s ease-in-out infinite alternate;
+animation-delay:0.8s;
 }
 
 /* ================= ANIMACION GLOW ================= */
-
+  
+@keyframes subirSuave{
+0%{
+opacity:0;
+transform:translateY(25px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+  
 @keyframes titileoSuave{
 0%{
 text-shadow:
@@ -282,7 +303,13 @@ text-shadow:
 
 </section>
 
-<h2 class="titulo-seccion">Tarot Terapéutico ✨️</h2>
+<section class="fondo-celeste">
+  <div class="contenido-celeste">
+
+    <h2>Tarot Terapéutico ✨️</h2>
+
+  </div>
+</section>
   
 </body>
 </html>
