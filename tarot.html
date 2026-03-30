@@ -1,1 +1,80 @@
-kkk
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mariposa Azul</title>
+
+<style>
+
+/* ================= FUENTE ================= */
+
+@font-face {
+  font-family: 'Halja';
+  src: url('HALJA-Regular.otf') format('opentype');
+}
+
+/* ================= BASE ================= */
+
+body{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+
+/* ================= HERO MINI (CON IMAGEN REAL) ================= */
+
+.hero-mini{
+  min-height:25vh;
+
+  background-image:
+  linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+  url('fondo 2.jpeg');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  padding:30px 20px;
+  color:white;
+}
+
+.hero-title{
+  font-family:'Halja';
+  font-size:48px;
+  font-weight:300;
+
+  text-shadow:
+  0 0 6px rgba(255,255,255,0.8),
+  0 0 18px rgba(255,255,255,0.5);
+
+  margin:0;
+}
+
+.hero-subtitle{
+  font-size:18px;
+  margin-top:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero-mini">
+
+  <h1 class="hero-title">Mariposa Azul</h1>
+  <div class="hero-subtitle">
+    Terapias Holísticas, Tarot Evolutivo y Rituales
+  </div>
+
+</section>
+
+</body>
+</html>
