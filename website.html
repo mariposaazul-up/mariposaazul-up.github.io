@@ -531,7 +531,7 @@ box-shadow:
   width:100%;
   max-width:600px;
   margin:40px auto;
-  padding:20px;
+  padding:20px 20px 10px 20px;
   border-radius:30px;
   position:relative;
 
@@ -576,7 +576,7 @@ box-shadow:
   display:flex;
   justify-content:center;
   gap:10px;
-  margin-top:15px;
+  margin-top:23px;
 }
 
 .dot{
@@ -596,7 +596,8 @@ box-shadow:
   text-align:center;
   font-family:'Lobster';
   color:#d9dcde;
-  margin-top:10px;
+  margin-top:25px;
+  margin-bottom: 40px;
   font-size:22px;
 
   text-shadow:
@@ -604,6 +605,23 @@ box-shadow:
   0 0 8px rgba(120,170,220,0.9),
   0 0 18px rgba(120,170,220,0.7),
   0 0 28px rgba(25,87,145,0.5);
+}
+
+@media (max-width: 768px){
+
+  .carrusel-wrapper{
+    max-width:100%;
+    padding:10px;
+  }
+
+  .grupo{
+    gap:10px;
+  }
+
+  .grupo img{
+    width:42%;
+  }
+
 }
 /* ================= OJITO ================= */
 
