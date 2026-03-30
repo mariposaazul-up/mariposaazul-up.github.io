@@ -20,6 +20,11 @@
   src: url('NotoSerifEthiopic-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Lobster';
+  src: url('LobsterTwo-Regular.ttf') format('truetype');
+}
+  
 /* ================= BASE ================= */
 
 body{
@@ -476,10 +481,52 @@ font-family:'NotoEthiopic';
 
 <section class="catalogo-grid">
 
-  <div class="catalogo-card">
-    <!-- contenido de la tarjeta -->
+ <div class="catalogo-card" style="background-image:url('fondo-tarjeta.jpeg')">
+
+  <div class="catalogo-titulo-card">
+    Preguntas Específicas
   </div>
 
+  <div class="catalogo-imagenes">
+
+    <div class="catalogo-frame">
+
+      <div class="indicador-scroll">
+        desliza <span>→</span>
+      </div>
+
+      <img src="tarotespecifico1.jpeg" class="catalogo-img">
+      <img src="tarotespecifico2.jpeg" class="catalogo-img">
+      <img src="tarotespecifico3.jpeg" class="catalogo-img">
+
+    </div>
+
+  </div>
+
+  <div class="catalogo-descripcion">
+    Responde una pregunta puntual con claridad y guía.
+  </div>
+
+  <div class="catalogo-precio">
+    $8.000
+  </div>
+
+  <button class="catalogo-btn" onclick="enviarWhatsApp('Preguntas Específicas')">
+    Agendar
+  </button>
+
+</div>
+
 </section>
+
+<script>
+function agendarEspecificas(){
+const numero="56928055904";
+const mensaje="Hola ,Scar ðŸ¦‹ðŸŒ™. Quisiera agendar este servicio de *Preguntas EspecÃ­ficas*Â¡!";
+const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURIComponent(mensaje);
+window.open(url,"_blank");
+}
+</script>
+  
 </body>
 </html>
