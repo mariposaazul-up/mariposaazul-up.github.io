@@ -740,6 +740,99 @@ font-size:15px;
 }
 }
 
+.carrusel-wrapper{
+  width:100%;
+  max-width:600px;
+  margin:40px auto;
+  padding:7px 20px 10px 20px;
+  border-radius:30px;
+  position:relative;
+}
+
+/* MARCO */
+.carrusel-wrapper::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:40%;
+  bottom:0;
+  height:70%;
+  border-radius:20px;
+  border:2px solid #195791;
+
+  box-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5),
+  inset 0 0 6px rgba(120,170,220,1),
+  inset 0 0 8px rgba(120,170,220,0.9),
+  inset 0 0 18px rgba(120,170,220,0.7),
+  inset 0 0 28px rgba(25,87,145,0.5);
+
+  z-index:1;
+}
+
+/* TRACK */
+.carrusel-track{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  z-index:2;
+  position:relative;
+}
+
+/* GRUPOS */
+.grupo{
+  min-width:100%;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  scroll-snap-align:start;
+}
+
+/* IMÁGENES */
+.grupo img{
+  width:45%;
+  border-radius:20px;
+  object-fit:cover;
+}
+
+/* DOTS */
+.dots{
+  text-align:center;
+  margin-top:15px;
+}
+
+.dot{
+  height:10px;
+  width:10px;
+  margin:0 5px;
+  background:#d9dcde;
+  border-radius:50%;
+  display:inline-block;
+  opacity:0.5;
+}
+
+.dot.active{
+  opacity:1;
+}
+
+/* TITULO */
+.titulo-lo-mas-pedido{
+  text-align:center;
+  font-family:'Lobster';
+  color:#d9dcde;
+  margin-top:10px;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5);
+}
 </style>
 </head>
 
@@ -961,7 +1054,6 @@ Agenda Aquí
     </div>
 
   </div>
-
 </section>
   
 <script>
