@@ -8,11 +8,16 @@
 
 <style>
 
-/* ================= FUENTE ================= */
+/* ================= FUENTES ORIGINALES ================= */
 
 @font-face {
   font-family: 'Halja';
   src: url('HALJA-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoEthiopic';
+  src: url('NotoSerifEthiopic-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 /* ================= BASE ================= */
@@ -20,10 +25,10 @@
 body{
   margin:0;
   padding:0;
-  font-family:sans-serif;
+  font-family:'NotoEthiopic', serif;
 }
 
-/* ================= HERO MINI (CON IMAGEN REAL) ================= */
+/* ================= HERO MINI ================= */
 
 .hero-mini{
   min-height:25vh;
@@ -45,10 +50,12 @@ body{
   color:white;
 }
 
+/* TÍTULO (igual estilo que el original) */
 .hero-title{
   font-family:'Halja';
-  font-size:48px;
+  font-size:56px;
   font-weight:300;
+  letter-spacing:1px;
 
   text-shadow:
   0 0 6px rgba(255,255,255,0.8),
@@ -57,9 +64,10 @@ body{
   margin:0;
 }
 
+/* SUBTÍTULO (ajustado al estilo real) */
 .hero-subtitle{
-  font-size:18px;
-  margin-top:8px;
+  font-size:22px;
+  margin-top:2px;
 }
 
 </style>
