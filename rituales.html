@@ -558,7 +558,7 @@ margin:20px 0;
 
 text-shadow:0 2px 6px rgba(0,0,0,0.4);
 }
-
+  
 .descripcion-pequeño{
 font-size:13px;
 }
@@ -582,6 +582,9 @@ margin:10px 0 20px;
 text-shadow:0 2px 6px rgba(0,0,0,0.4);
 }
 
+.precio-pequeno{
+  font-size:22px;
+}
 /* ================= BOTON ================= */
 
 .catalogo-btn{
@@ -602,6 +605,16 @@ transition:0.3s;
 
 .catalogo-btn:hover{
 background:rgba(255,255,255,0.15);
+}
+
+.catalogo-card{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between; /* 🔥 ESTA ES LA CLAVE */
+}
+
+.catalogo-descripcion{
+  flex-grow:1;
 }
 
 /* ================= HERO FINAL ================= */
