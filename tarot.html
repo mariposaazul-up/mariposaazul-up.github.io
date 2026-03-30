@@ -1250,6 +1250,19 @@ const url="https://api.whatsapp.com/send?phone="+numero+"&text="+encodeURICompon
 window.open(url,"_blank");
 }
 </script>
-  
+<script>
+const track = document.querySelector('.carrusel-track');
+const dots = document.querySelectorAll('.dot');
+
+track.addEventListener('scroll', () => {
+  const index = Math.round(track.scrollLeft / track.clientWidth);
+
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  if (dots[index]) {
+    dots[index].classList.add('active');
+  }
+});
+</script>
 </body>
 </html>
