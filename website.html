@@ -541,6 +541,26 @@ box-shadow:
   0 0 40px rgba(25,87,145,0.6);
 }
 
+.carrusel-wrapper::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+
+  height:70%; /* ← esto define el tamaño del marco */
+
+  border-radius:20px;
+  border:2px solid rgba(25,87,145,0.8);
+
+  box-shadow:
+  0 0 6px rgba(25,87,145,0.9),
+  0 0 12px rgba(25,87,145,0.7),
+  0 0 18px rgba(25,87,145,0.5);
+
+  z-index:1;
+}
+  
 /* SCROLL */
 .carrusel-track{
   display:flex;
@@ -569,6 +589,8 @@ box-shadow:
   aspect-ratio:1/1;
   object-fit:cover;
   border-radius:18px;
+  position: relative; 
+  z-index:2;
 }
 
 /* DOTS */
