@@ -267,60 +267,22 @@ animation: subirSuave 1s ease forwards, titileoSuave 2s ease-in-out infinite alt
 animation-delay:0.8s;
 }
 
-.imagen-flotante{
-position:absolute;
-width:90px;
-pointer-events:none;
-}
-
-/* izquierda */
-.imagen-flotante.izq{
-  position:static;
-animation: flotarIzq 4s ease-in-out infinite alternate;
-}
-
-/* derecha */
-.imagen-flotante.der{
-  position:static;
-animation: flotarDer 5s ease-in-out infinite alternate;
-}
-
-@keyframes flotarIzq{
-0%{ transform:translateY(0px) rotate(-2deg); }
-50%{ transform:translateY(-6px) rotate(2deg); }
-100%{ transform:translateY(4px) rotate(-1deg); }
-}
-
-@keyframes flotarDer{
-0%{ transform:translateY(0px) rotate(2deg); }
-50%{ transform:translateY(-8px) rotate(-2deg); }
-100%{ transform:translateY(5px) rotate(1deg); }
-}
-
-.ojito-section{
-padding:20px 20px 10px 20px;
-text-align:center;
-}
-
-.ojito-title{
+..titulo-simple{
 display:flex;
-align-items:center;
 justify-content:center;
-gap:10px;
+align-items:center;
 }
 
-.ojito-title h2{
-font-family:'Halja';
-font-size:clamp(70px,7vw,100px);
-font-weight:300;
+.titulo-simple h2{
 margin:0;
+font-family:'Halja';
+font-size:60px;
 color:#195791;
-text-shadow:
-0 0 6px rgba(120,170,220,0.9),
-0 0 14px rgba(120,170,220,0.8),
-0 0 25px rgba(25,87,145,0.6),
-0 0 50px rgba(25,87,145,0.4);
-  animation: titileoSuave 2s ease-in-out infinite alternate;
+}
+
+.titulo-simple img{
+width:90px;
+height:auto;
 }
 
   
@@ -745,12 +707,13 @@ font-size:15px;
 
 <section class="fondo-celeste">
   <div class="contenido-celeste">
-      <div class="titulo-ojito">
-      <img src="gatoizquierda.png" class="imagen-flotante izq">
-  <h2>Tarot Terapéutico </h2>
-        <img src="gatoderecha.png" class="imagen-flotante der">
-   
-  </div>
+     <div class="titulo-simple">
+  <img src="gatoizquierda.png">
+  
+  <h2>Tarot Terapéutico</h2>
+  
+  <img src="gatoderecha.png">
+</div>
      </div>
 </section>
   
