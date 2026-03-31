@@ -274,6 +274,321 @@ animation:brillar 1.5s ease-in-out infinite;
   margin-top:2px;
 }
 
+  .principios-sticker{
+  width:81%;
+  max-width:81%;
+  margin:60px auto;
+  padding:26px 22px 20px 22px !important;
+  box-sizing:border-box;
+}
+.principios-texto p{
+  font-size:13px !important;
+}
+
+.principios-texto strong{
+  font-size:14px !important;
+}
+
+.confesion-contenedor{
+  width:90%;
+}
+
+.confesion-frase{
+  font-size:17px;   /* un poquito más pequeño en móvil */
+  max-width:85%;   /* importante */
+}
+}
+
+@media (max-width:768px){
+  .hero{
+    min-height:60vh;
+  }
+}
+  /* ================= SOBRE MI CONTENIDO ================= */
+
+.sobre-mi-contenedor{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  gap:80px;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px 80px 20px;
+}
+
+/* ===== IZQUIERDA ===== */
+
+.sobre-mi-izquierda{
+  flex:0 0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+
+  background:white;
+  padding:8px 2px 25px 2px; /* borde inferior más grande tipo polaroid */
+
+  box-shadow:
+    -20px 25px 45px rgba(0,0,0,0.25);
+}
+
+/* Marco estilo catálogo */
+
+.foto-marco{
+  position:relative;
+  width:300px;
+  aspect-ratio:3/4;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:visible;
+}
+
+.foto-scar{
+  width:88%;
+  height:88%;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+/* Mariposas */
+
+.mariposa{
+  position:absolute;
+  width:65px;
+  filter:
+    drop-shadow(0 0 6px rgba(57,84,140,0.5))
+    drop-shadow(0 0 14px rgba(57,84,140,0.3));
+  animation:giroMariposa 6s ease-in-out infinite;
+}
+
+.scar-m1{ top:-20px; left:12%; }
+.scar-m2{ bottom:-25px; right:15%; }
+.scar-m3{ top:45%; left:-30px; width:50px; }
+
+@keyframes giroMariposa{
+  0%{ transform:rotate(-3deg); }
+  50%{ transform:rotate(3deg); }
+  100%{ transform:rotate(-3deg); }
+}
+
+/* Nombre */
+
+.sobre-mi-nombre{
+  margin-top:25px;
+  font-family:'Lobster';
+  font-size:28px;
+  color:#39548C;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.35),
+    0 0 8px rgba(57,84,140,0.25);
+}
+
+/* ===== DERECHA ===== */
+
+.sobre-mi-derecha{
+  flex:1.4;
+  font-family:'NotoEthiopic';
+  font-size:14px;
+  color:#d9dcde;
+  line-height:1.5;
+font-weight:500;
+  text-shadow:
+0 0 6px rgba(120,170,220,1),
+0 0 8px rgba(120,170,220,0.9),
+0 0 18px rgba(120,170,220,0.7),
+0 0 28px rgba(25,87,145,0.5);
+  background: rgba(57,84,140,0.15);
+  padding: 22px 22px;
+  border-radius: 22px;
+}
+
+.sobre-mi-derecha p{
+  margin-top:0px
+  margin-bottom:10px;
+}
+
+.cierre-sobre-mi{
+  font-family:'Cathalia';
+  display:block;
+  font-size:17px;
+  line-height:1.5;
+}
+  
+.pausa{
+  display:block;
+  height:8px;
+}
+
+.principios-texto p{
+  margin-bottom:22px;
+}
+
+.principios-texto strong{
+  font-weight:700;
+  display:block;
+  margin-bottom:6px;
+  font-size:17px;
+}
+  /* ===== STICKER PRINCIPIOS ===== */
+
+.principios-sticker{
+  position:relative;
+  max-width:900px;
+  margin:40px auto;
+  padding:55px 45px;
+
+  background:rgba(30,55,110,0.85); /* mismo azul que pagos */
+  color:white;
+  text-align:center;
+
+  border-radius:0; /* puntas rectas */
+
+  box-shadow:-18px 20px 40px rgba(0,0,0,0.35); /* sombra abajo izquierda */
+}
+
+.principios-texto{
+  font-family:'NotoEthiopic';
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* Decoraciones */
+
+.decor{
+  position:absolute;
+  width:80px;
+  filter:
+    drop-shadow(0 0 6px rgba(255,255,255,0.6))
+    drop-shadow(0 0 14px rgba(255,255,255,0.3));
+}
+
+/* Posiciones alrededor del borde */
+
+.e1{ top:-30px; left:-30px; }
+.e2{ top:-35px; right:15%; }
+.e3{ bottom:-35px; right:-30px; }
+
+.m1{ bottom:-35px; left:15%; }
+.m2{ top:40%; left:-45px; }
+  /* ================= CONFESIÓN VIDEO ================= */
+
+.confesion-section{
+  margin:100px 0 80px 0;
+  display:flex;
+  justify-content:center;
+}
+
+.confesion-contenedor{
+  width:70%;
+  max-width:500px;
+  text-align:left;
+}
+
+.confesion-frase{
+  font-family:'Lobster';
+  font-size:20px;
+  color:#195791; /* mismo color que los otros textos */
+  line-height:1.3;
+  margin-bottom:16px;
+max-width: 500px;
+  text-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5);  
+}
+
+.video-link{
+  position:relative;
+  width:100%;
+  max-width:750px;
+}
+
+.video-link img{
+  width:100%;
+  display:block;
+  border-radius:18px;
+  box-shadow:-12px 16px 35px rgba(0,0,0,0.35);
+}
+
+.video-link a{
+  position:relative;
+  display:block;
+}
+
+.play-overlay{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-size:60px;
+  color:white;
+  background:rgba(0,0,0,0.5);
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.3s ease;
+}
+
+.video-link:hover .play-overlay{
+  background:rgba(0,0,0,0.7);
+  transform:translate(-50%, -50%) scale(1.1);
+}
+
+.cierre-en-fin{
+font-family:'Cathalia';
+font-size:24.5px; /* un poco más grande que catálogo */
+color:#A28329;
+text-align:center;
+margin-top:15px;
+margin-bottom:20px;
+
+text-shadow:
+0 1px 0 rgba(120,90,20,0.4),        /* sombra oscura sutil debajo */
+0 0 3px rgba(162,131,41,0.8),       /* brillo cercano */
+0 0 8px rgba(162,131,41,0.5);       /* halo más suave */
+}
+
+@media(max-width: 768px){
+.catalogo-grid{
+grid-template-columns:1fr;
+padding:0 20px;
+}
+.descripcion-grande{
+font-size:15px;
+}
+.descripcion-mas-grande{
+font-size:22px;
+}
+.sobre-mi-contenedor{
+  flex-direction:column;
+  gap:0px;
+  padding:0px 25px 30px 25px;
+}
+
+.sobre-mi-derecha{
+  font-size:16px;
+  text-align:center;
+}
+}
+@media (max-width: 768px){
+  .descripcion-grande,
+  .descripcion-mas-grande{
+    font-size:15px !important;
+  }
+  .sobre-mi-derecha{
+  margin-top: 10px;
+  }
+.sobre-mi-derecha{
+  width: 104%;
+  max-width: 104%;
+}
+}
 </style>
 <body>
   
@@ -288,4 +603,120 @@ animation:brillar 1.5s ease-in-out infinite;
 
 </section>
 
+<section id="sobre-mi" class="sobre-mi-section">
+
+  <div class="sobre-mi-title">
+    <img src="izquierda.png" class="sobre-img sobre-left">
+    <h2>Sobre Mí</h2>
+    <img src="derecha.png" class="sobre-img sobre-right">
+  </div>
+
+
+  <div class="sobre-mi-contenedor">
+
+  <!-- LADO IZQUIERDO -->
+  <div class="sobre-mi-izquierda">
+
+    <div class="foto-marco">
+
+      <img src="yo.jpeg" class="foto-scar">
+
+<img src="mariposa.png" class="mariposa scar-m1">
+<img src="mariposa.png" class="mariposa scar-m2">
+<img src="mariposa.png" class="mariposa scar-m3">
+
+    </div>
+
+    <div class="sobre-mi-nombre">
+      Hola, Soy Escarlet <br> 💜✨️
+    </div>
+
+  </div>
+
+  <!-- LADO DERECHO -->
+  <div class="sobre-mi-derecha">
+
+    <p>
+    Desde pequeña pareciera que mi camino fue el de cuidar y sostener a otros. Viví situaciones que me llevaron a asumir ese rol, e incluso antes de comprenderlo ya lo hacía desde y por amor. Por muchos años evadí mi verdadera yo 🧙🏻‍♀️, tanto por los prejuicios como por el miedo a lo desconocido y las experiencias espirituales que no sabía cómo explicar. Pero mientras más lo negaba, más fuerte se hacía el puente que quería que estuviera conectada con lo Divino, con Dios.
+    <span class="pausa"></span>Hasta que un día me di cuenta de que estaba viviendo limitada y, en realidad, no era nada externo lo que me atemorizaba; era esa parte profunda de mí que pedía ser aceptada y que, al final, no era tan terrible como pensaba.
+   <span class="pausa"></span>Mi proceso no ha sido lineal. Ha tenido subidas y bajadas, me cuestione el mundo espiritual y la "matrix" donde vivía haciéndome romper patrones generacionales. He sido puesta a prueba para recordar quién soy. He aprendido a transmutar, alquimizar y a renacer desde el dolor y mis propias heridas. Porque, como en la carta de La Torre (tarot), del caos también podemos reconstruirnos.
+    <span class="pausa"></span>Al final, la sanación parte de reconciliarnos con esas partes donde quizá aún no ha llegado luz.
+    <span class="pausa"></span>Hoy acepto mi camino de sanadora con la responsabilidad y el respeto que conlleva. Todo desde el amor incondicional que Dios puso en mi corazón para entregarlo al mundo, con la intención de acompañarte en TU PROCESO de encontrar claridad y herramientas reales que te ayuden a transformar TU VIDA. Ya que, si no estamos bien con nuestra fuente interna, difícilmente podremos construir una realidad plena afuera.
+    Yo te acompaño, te guio, te comprendo y te abrazo para que seas tu verdad, tu versión más consciente y, al mismo tiempo, más auténtica.
+    <span class="pausa"></span><span class="cierre-sobre-mi">
+No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en coherencia con quien realmente eres
+</span>
+    </p>
+
+  </div>
+
+</div> </section>
+  <section class="principios-section">
+
+  <h2 class="catalogo-titulo titulo-principios animar-titulo">
+    Mis Principios<br>
+    <span class="sub-principios">reflejados en Mariposa Azul</span>
+  </h2>
+<div class="principios-sticker">
+
+  <!-- Decoraciones -->
+  <img src="estrella.png" class="decor e1">
+  <img src="estrella.png" class="decor e2">
+  <img src="estrella.png" class="decor e3">
+  <img src="mariposa.png" class="decor m1">
+  <img src="mariposa.png" class="decor m2">
+
+  <!-- Contenido -->
+ <div class="principios-texto">
+
+  <p>
+    <strong>1. Enfoque terapéutico</strong>
+    Las terapias ofrecidas son complementarias y no sustituyen tratamiento médico, psicológico o psiquiátrico. Pueden integrar a otros procesos de salud para mayor armonización y sanación.
+ <span class="pausa"></span>
+    <strong>2. Responsabilidad individual</strong>
+    Cada proceso es único e individual. Los resultados pueden variar según la apertura, disposición y compromiso del consultante. Yo te guío y te acompaño en el proceso, pero es fundamental que realices tu trabajo interno y utilices las herramientas entregadas durante las sesiones.
+ <span class="pausa"></span>
+    <strong>3. Ética energética</strong>
+    No se realizan trabajos destinados a dañar, manipular o interferir en la voluntad de terceros.
+  <span class="pausa"></span>
+    <strong>4. Autonomía y conciencia</strong>
+    No se fomentan dependencias energéticas. El acompañamiento está orientado a fortalecer la autonomía, el autoconocimiento y el poder personal de cada persona.
+  </p>
+
+</div>
+
+</div>
+
+</section>
+  <section class="confesion-section">
+
+  <div class="confesion-contenedor">
+
+    <div class="confesion-frase">
+      Y una confesión loca 🤪:
+     <span class="pausa"></span>
+      Siempre que escucho esta canción, pienso en el Ser que será el Amor de mi vida.
+    </div>
+
+<div class="video-link">
+  <a href="https://www.youtube.com/watch?v=-KGG25i38hw" target="_blank">
+
+    <img 
+      src="https://img.youtube.com/vi/-KGG25i38hw/maxresdefault.jpg" 
+      alt="Ver en YouTube">
+
+    <div class="play-overlay">
+      ▶
+    </div>
+
+  </a>
+</div>
+
+</section>
+
+ <section class="cierre-en-fin">
+<div class="cierre-en-fin animar-enfin">
+<span>En fin...</span>
+</div>
+</section>
 </body>
