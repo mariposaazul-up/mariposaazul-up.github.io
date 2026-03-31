@@ -841,7 +841,63 @@ font-size:15px;
 
 }
 }
-  
+
+.destello{
+  position:absolute;
+  z-index:-1;
+  width:15px;
+  height:15px;
+  pointer-events:none;
+  opacity:0.9;
+  animation:brillo 2s infinite ease-in-out;
+}
+
+/* línea vertical */
+.destello::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  width:0.5px;
+  height:100%;
+  background:linear-gradient(to bottom, transparent, white, transparent);
+  transform:translateX(-50%);
+  box-shadow:0 0 6px white;
+}
+
+/* línea horizontal */
+.destello::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  width:100%;
+  height:0.5px;
+  background:linear-gradient(to right, transparent, white, transparent);
+  transform:translateY(-50%);
+  box-shadow:0 0 6px white;
+}
+
+@keyframes brillo{
+  0%,100%{
+    opacity:0;
+    transform:scale(0.5);
+  }
+  50%{
+    opacity:1;
+    transform:scale(1.2);
+  }
+}
+.destellos-container{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  pointer-events:none;
+  overflow:hidden;
+}
+
 </style>
 <body>
   
@@ -855,7 +911,7 @@ font-size:15px;
   </div>
 
 </section>
-
+<div class="destellos-container"></div>
 <section id="sobre-mi" class="sobre-mi-section">
 
   <div class="sobre-mi-title">
@@ -1008,6 +1064,22 @@ No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en
 
   </div>
 </section>
+  
+  <script>
+const container = document.querySelector('.destellos-container');
+
+for(let i=0; i<60; i++){
+  const d = document.createElement('div');
+  d.classList.add('destello');
+
+  d.style.top = Math.random() * 100 + "%";
+  d.style.left = Math.random() * 100 + "%";
+  d.style.animationDelay = Math.random() * 3 + "s";
+  d.style.transform = "scale(" + (Math.random() * 0.9 + 0.5) + ")";
+
+  container.appendChild(d);
+}
+</script>
   
   <script id="8n3k2x">
 const elementos = document.querySelectorAll('.animar-titulo');
