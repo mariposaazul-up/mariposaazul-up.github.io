@@ -1854,6 +1854,36 @@ text-shadow:
   overflow:hidden;
 }
 
+.brillo-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.brillo-final img {
+  width: 120px; /* ajusta tamaño */
+  animation: brilloSuave 3s infinite ease-in-out;
+}
+
+/* efecto glow */
+@keyframes brilloSuave {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3))
+            drop-shadow(0 0 10px rgba(255,255,255,0.2));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.8))
+            drop-shadow(0 0 25px rgba(255,255,255,0.6));
+    transform: scale(1.05);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3))
+            drop-shadow(0 0 10px rgba(255,255,255,0.2));
+    transform: scale(1);
+  }
+}
+  
 </style>  </head>  <body>
   <div class="estrellas-extra"></div>
   <section class="hero">
@@ -1986,7 +2016,9 @@ text-shadow:
     detrás de Mariposa Azul y cuáles son los principios<br>
     de este espacio**
 </p>
-
+<div class="brillo-final">
+  <img src="mano.png" alt="decoración mágica">
+</div>
   <section class="cierre-final">
   <div class="cierre-contenido">
     <h2 class="sanemos">¿Sanemos Juntxs?</h2>
