@@ -1067,7 +1067,9 @@ font-size:15px;
   </div>
 
 </section>
+  
 <div class="destellos-container"></div>
+  
 <section class="fondo-celeste">
   <div class="contenido-celeste">
      <div class="titulo-simple">
@@ -1418,29 +1420,21 @@ font-size:15px;
 
   </div>
 </section>
-  <script>
+<script>
 window.addEventListener("load", () => {
 
+  console.log("destellos funcionando");
+
   const container = document.querySelector('.destellos-container');
-
-  const altura = Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight
-  );
-
-  container.style.height = altura + "px";
 
   for(let i=0; i<60; i++){
     const d = document.createElement('div');
     d.classList.add('destello');
 
-    d.style.top = Math.random() * altura + "px";
-    d.style.left = Math.random() * window.innerWidth + "px";
+    d.style.top = Math.random() * 100 + "%";
+    d.style.left = Math.random() * 100 + "%";
 
     d.style.animationDelay = Math.random() * 2 + "s";
-
-    d.style.transform =
-      "scale(" + (Math.random() * 0.8 + 0.5) + ") rotate(" + (Math.random() * 360) + "deg)";
 
     container.appendChild(d);
   }
