@@ -842,6 +842,76 @@ font-size:15px;
 }
 }
 
+/* CONTENEDOR */
+.sobre-mi-section{
+  position:relative;
+}
+
+.destellos-container{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  overflow:hidden;
+  z-index:0;
+}
+
+/* DESTELLOS */
+.destello{
+  position:absolute;
+  width:14px;
+  height:14px;
+  opacity:0.8;
+  animation:brillo 2s infinite ease-in-out;
+}
+
+/* líneas finas */
+.destello::before,
+.destello::after{
+  content:"";
+  position:absolute;
+  background:linear-gradient(to bottom, transparent, white, transparent);
+  box-shadow:0 0 4px white;
+}
+
+/* vertical */
+.destello::before{
+  top:0;
+  left:50%;
+  width:0.8px;
+  height:100%;
+  transform:translateX(-50%);
+}
+
+/* horizontal */
+.destello::after{
+  left:0;
+  top:50%;
+  width:100%;
+  height:0.8px;
+  transform:translateY(-50%);
+}
+
+/* animación */
+@keyframes brillo{
+  0%,100%{
+    opacity:0;
+    transform:scale(0.5);
+  }
+  50%{
+    opacity:1;
+    transform:scale(1.2);
+  }
+}
+
+/* ASEGURAR QUE EL CONTENIDO QUEDE ARRIBA */
+.sobre-mi-contenedor,
+.sobre-mi-title{
+  position:relative;
+  z-index:2;
+}
 
 </style>
 <body>
@@ -856,6 +926,7 @@ font-size:15px;
   </div>
 
 </section>
+  <div class="destellos-container"></div>
 <section id="sobre-mi" class="sobre-mi-section">
   <div class="sobre-mi-title">
     <img src="izquierda.png" class="sobre-img sobre-left">
@@ -1007,7 +1078,31 @@ No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en
 
   </div>
 </section>
-  
+  <script>
+const container = document.querySelector('.destellos-container');
+
+function crearDestello(){
+  const d = document.createElement('div');
+  d.classList.add('destello');
+
+  d.style.top = Math.random() * 100 + "%";
+  d.style.left = Math.random() * 100 + "%";
+  d.style.animationDuration = (Math.random() * 2 + 1.5) + "s";
+  d.style.opacity = Math.random() * 0.6 + 0.4;
+
+  d.style.transform = "scale(" + (Math.random() * 0.8 + 0.5) + ") rotate(" + (Math.random() * 360) + "deg)";
+
+  container.appendChild(d);
+
+  setTimeout(() => {
+    d.remove();
+  }, 3000);
+}
+
+setInterval(() => {
+  crearDestello();
+}, 400);
+</script>
   <script id="8n3k2x">
 const elementos = document.querySelectorAll('.animar-titulo');
 
