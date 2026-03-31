@@ -468,10 +468,11 @@ font-weight:500;
 .sobre-mi-derecha p{
   margin-top:0px
   margin-bottom:10px;
+  text-align:center;
 }
 
 .cierre-sobre-mi{
-  font-family:'Cathalia';
+  font-family:'Cathalia'  !important;
   display:block;
   font-size:17px;
   line-height:1.5;
@@ -650,6 +651,48 @@ font-size:22px;
   max-width: 104%;
 }
 }
+
+/* CONTENEDOR DEL TÍTULO */
+.principios-section{
+  padding-top:80px;
+}
+
+/* TÍTULO PRINCIPAL */
+.titulo-principios{
+  text-align:center;
+  font-family:'Halja';
+  font-size:80px;
+  font-weight:200;
+  color:#1f4e79;
+
+  margin:0;
+  line-height:1.1;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+
+  animation: titileoSuave 2s ease-in-out infinite alternate;
+}
+
+/* SUBTÍTULO */
+.sub-principios{
+  display:block;
+  margin-top:18px;
+
+  font-family:'NotoEthiopic';
+  font-size:32px;
+  font-weight:400;
+
+  color:#2b6aa3;
+
+  text-shadow:
+  0 0 4px rgba(120,170,220,0.6),
+  0 0 10px rgba(120,170,220,0.5);
+}
+  
 </style>
 <body>
   
@@ -714,10 +757,10 @@ No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en
 </div> </section>
   <section class="principios-section">
 
-  <h2 class="catalogo-titulo titulo-principios animar-titulo">
-    Mis Principios<br>
-    <span class="sub-principios">reflejados en Mariposa Azul</span>
-  </h2>
+<h2 class="titulo-principios animar-titulo">
+  Mis Principios<br>
+  <span class="sub-principios">reflejados en Mariposa Azul</span>
+</h2>
 <div class="principios-sticker">
 
   <!-- Decoraciones -->
@@ -781,3 +824,18 @@ No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en
 </div>
 </section>
 </body>
+  <script id="8n3k2x">
+const elementos = document.querySelectorAll('.animar-titulo');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+elementos.forEach(el => observer.observe(el));
+</script>
