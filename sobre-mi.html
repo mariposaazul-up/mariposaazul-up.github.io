@@ -184,6 +184,54 @@ animation: titilarC 4s ease-in-out infinite alternate;
 100%{ opacity:0.4; }
 }
 
+@keyframes subirSuave{
+0%{
+opacity:0;
+transform:translateY(25px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+  
+@keyframes titileoSuave{
+0%{
+text-shadow:
+0 0 6px rgba(120,170,220,0.6),
+0 0 14px rgba(120,170,220,0.5),
+0 0 25px rgba(25,87,145,0.4),
+0 0 50px rgba(25,87,145,0.3);
+}
+
+50%{
+text-shadow:
+0 0 10px rgba(120,170,220,1),
+0 0 22px rgba(120,170,220,1),
+0 0 29px rgba(25,87,145,0.9),
+0 0 60px rgba(25,87,145,0.7);
+}
+
+100%{
+text-shadow:
+0 0 6px rgba(120,170,220,0.6),
+0 0 14px rgba(120,170,220,0.5),
+0 0 25px rgba(25,87,145,0.4),
+0 0 50px rgba(25,87,145,0.3);
+}
+}
+
+.brillo{
+display:inline-block;
+animation:brillar 1.5s ease-in-out infinite;
+}
+
+@keyframes brillar{
+0%{ transform:scale(1); filter:drop-shadow(0 0 2px #ffffff); }
+50%{ transform:scale(1.3); filter:drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 18px #ffffff); }
+100%{ transform:scale(1); filter:drop-shadow(0 0 2px #ffffff); }
+}
+  
 /* ================= HERO MINI ================= */
 
 .hero-mini{
@@ -227,3 +275,17 @@ animation: titilarC 4s ease-in-out infinite alternate;
 }
 
 </style>
+<body>
+  
+<div class="estrellas-extra"></div>
+  
+<section class="hero-mini">
+
+  <h1 class="hero-title">Mariposa Azul</h1>
+  <div class="hero-subtitle">
+    Terapias Holísticas, Tarot Evolutivo y Rituales
+  </div>
+
+</section>
+
+</body>
