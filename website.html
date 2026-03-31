@@ -1753,27 +1753,6 @@ font-size:15px;
 .nuevo-img{
   height:clamp(55px,6vw,85px);
 }
-
-/* Animaciones distintas para cada lado */
-.nuevo-left{
-  animation: moverIzq 2.5s ease-in-out infinite;
-}
-
-.nuevo-right{
-  animation: moverDer 2.5s ease-in-out infinite;
-}
-
-@keyframes moverIzq{
-  0%{ transform:rotate(-12deg) translateX(0); }
-  50%{ transform:rotate(-12deg) translateX(-14px); }
-  100%{ transform:rotate(-12deg) translateX(0); }
-}
-
-@keyframes moverDer{
-  0%{ transform:rotate(12deg) translateX(0); }
-  50%{ transform:rotate(12deg) translateX(14px); }
-  100%{ transform:rotate(12deg) translateX(0); }
-}
   
 </style>  </head>  <body>  <div class="estrellas-extra"></div> <section class="hero">
 
@@ -1876,9 +1855,9 @@ font-size:15px;
 
 <section class="nuevo-titulo-section">    
   <div class="nuevo-titulo-container">    
-    <img src="estrella.png" class="nuevo-img nuevo-left">    
+    <img src="estrella.png" class="sobre-img">    
     <h2>Acerca De</h2>    
-    <img src="estrella.png" class="nuevo-img nuevo-right">    
+    <img src="estrella.png" class="sobre-img">    
   </div>    
 </section>
   
