@@ -2877,8 +2877,8 @@ const carousel=document.getElementById("carousel");
 servicios.forEach((s,index)=>{
 
 let botonAccion = ""; 
- if(index === 0){
-botonAccion = () => window.location.href = "tarot.html";
+if(index === 0){
+botonAccion = "location.href='tarot.html'";
 }
  
   if(index === 1){ botonAccion = "document.getElementById('lectura-oraculo').scrollIntoView({behavior:'smooth'})"; } 
