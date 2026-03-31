@@ -1720,6 +1720,59 @@ font-size:15px;
 .grupo a img{
   display:block;
 }
+
+.nuevo-titulo-section{
+  padding:20px 20px 10px 20px;
+  text-align:center;
+}
+
+.nuevo-titulo-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+
+.nuevo-titulo-container h2{
+  font-family:'Halja';
+  font-size:clamp(70px,7vw,100px);
+  font-weight:200;
+  margin:0;
+  color:#195791;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+
+  animation: titileoSuave 2s ease-in-out infinite alternate;
+}
+
+.nuevo-img{
+  height:clamp(55px,6vw,85px);
+}
+
+/* Animaciones distintas para cada lado */
+.nuevo-left{
+  animation: moverIzq 2.5s ease-in-out infinite;
+}
+
+.nuevo-right{
+  animation: moverDer 2.5s ease-in-out infinite;
+}
+
+@keyframes moverIzq{
+  0%{ transform:rotate(-12deg) translateX(0); }
+  50%{ transform:rotate(-12deg) translateX(-14px); }
+  100%{ transform:rotate(-12deg) translateX(0); }
+}
+
+@keyframes moverDer{
+  0%{ transform:rotate(12deg) translateX(0); }
+  50%{ transform:rotate(12deg) translateX(14px); }
+  100%{ transform:rotate(12deg) translateX(0); }
+}
   
 </style>  </head>  <body>  <div class="estrellas-extra"></div> <section class="hero">
 
@@ -1819,6 +1872,15 @@ font-size:15px;
 </div>    
 </div>  
 </section> 
+
+<section class="nuevo-titulo-section">    
+  <div class="nuevo-titulo-container">    
+    <img src="estrella.png" class="nuevo-img nuevo-left">    
+    <h2>Acerca De</h2>    
+    <img src="estrella.png" class="nuevo-img nuevo-right">    
+  </div>    
+</section>
+  
   <div class="cta-mariposa">
 
   <div class="cta-texto">
