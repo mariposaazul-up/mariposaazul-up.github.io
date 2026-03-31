@@ -2880,12 +2880,25 @@ let botonAccion = "";
 if(index === 0){
 botonAccion = "location.href='tarot.html'";
 }
- 
-  if(index === 1){ botonAccion = "document.getElementById('lectura-oraculo').scrollIntoView({behavior:'smooth'})"; } 
-  if(index === 2){ botonAccion = "document.getElementById('reiki').scrollIntoView({behavior:'smooth'})"; } 
-  if(index === 3){ botonAccion = "document.getElementById('radiestesia').scrollIntoView({behavior:'smooth'})"; } 
-  if(index === 4){ botonAccion = "document.getElementById('limpiezas-ankh').scrollIntoView({behavior:'smooth'})"; } 
-  if(index === 5){ botonAccion = "document.getElementById('rituales-energeticos').scrollIntoView({behavior:'smooth'})"; }
+if(index === 1){
+botonAccion = "location.href='oraculo.html'";
+}
+
+if(index === 2){
+botonAccion = "location.href='reiki.html'";
+}
+
+if(index === 3){
+botonAccion = "location.href='radiestesia.html'";
+}
+
+if(index === 4){
+botonAccion = "location.href='limpieza.html'";
+}
+
+if(index === 5){
+botonAccion = "location.href='rituales.html'";
+}
 
 carousel.innerHTML+=`
 
