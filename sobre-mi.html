@@ -707,6 +707,140 @@ font-size:22px;
 
   animation: titileoSuave 2s ease-in-out infinite alternate;
 }
+
+.cierre-final{
+background-image:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url('fondo 2.jpeg');
+background-size:cover;
+background-position:center;
+padding:20px 0px;
+margin-top:110px;
+  border-radius:0;
+}
+
+.cierre-contenido{
+max-width:800px;
+margin:0 auto;
+}
+
+.sanemos{
+font-family:'HALJA'; /* la misma que usas en títulos góticos */
+font-size:45px;
+color:#cfd3da; /* plateado */
+text-align:left;
+  margin-top:5px;
+margin-bottom:10px;
+}
+
+.encaminemos{
+font-family:'NotoEthiopic';
+font-size:18px;
+color:#e2e5ea; /* plateado suave */
+text-align:left;
+font-weight:normal;
+margin:0;
+}
+
+.animar-titulo{
+opacity:0;
+transform:translateY(25px);
+transition:all 0.9s ease;
+}
+
+.animar-titulo.visible{
+opacity:1;
+transform:translateY(0);
+}
+  
+@media (max-width:768px){
+
+.cierre-final{
+width:100%;
+padding:12px 0;           /* controla lo delgado en móvil */
+background-size:cover;    /* mantiene la franja completa */
+background-position:center;
+}
+
+.cierre-contenido{
+width:100%;
+padding-left:20px;        /* margen interno para que el texto no pegue al borde */
+padding-right:20px;
+box-sizing:border-box;
+}
+
+.sanemos{
+font-size:clamp(24px,15vw,38px);   /* se adapta al ancho */
+  
+}
+
+.encaminemos{
+font-size:clamp(14px,3vw,18px);   /* más pequeño que el título */
+}
+}
+.footer-contacto{
+background:#ffffff;
+padding:25px 0 30px 0;
+}
+
+.footer-contenido{
+max-width:1100px;
+margin:0 auto;
+padding-left:40px;
+}
+
+.footer-titulo{
+font-family:'Lobster';
+font-size:28px;
+color:#A28329;
+
+text-shadow:
+0 1px 0 rgba(120,90,20,0.4),
+0 0 3px rgba(162,131,41,0.8),
+0 0 8px rgba(162,131,41,0.5);
+
+margin-bottom:20px;
+}
+
+.footer-redes{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.footer-linea{
+display:flex;
+align-items:center;
+gap:12px;
+font-family:'Glacial Indifference';
+font-size:16px;
+color:#444444; /* gris oscuro elegante */
+}
+
+.footer-linea img{
+width:16px;
+}
+
+.icono-whatsapp{
+width:14px;
+}
+
+@media (max-width:768px){
+
+.footer-contenido{
+padding-left:20px;
+}
+
+.footer-titulo{
+font-size:24px;
+}
+
+.footer-linea{
+font-size:15px;
+}
+
+}
+}
   
 </style>
 <body>
@@ -838,7 +972,43 @@ No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en
 <span>En fin...</span>
 </div>
 </section>
-</body>
+
+<section class="cierre-final">
+  <div class="cierre-contenido">
+    <h2 class="sanemos">¿Sanemos Juntxs?</h2>
+    <p class="encaminemos">Encaminemos tu proceso</p>
+  </div>
+</section>
+  <section class="footer-contacto">
+
+  <div class="footer-contenido">
+
+    <div class="footer-titulo">
+      Encuéntrame en:
+    </div>
+
+    <div class="footer-redes">
+
+      <div class="footer-linea">
+        <img src="instagram.png" alt="Instagram">
+        <span>@mariposaazul__</span>
+      </div>
+
+      <div class="footer-linea">
+        <img src="tiktok.png" alt="TikTok">
+        <span>@mariposaazul.__</span>
+      </div>
+
+      <div class="footer-linea">
+<img src="whatsapp.png" class="icono-whatsapp" alt="WhatsApp">
+        <span>+56 9 2805 5904</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  
   <script id="8n3k2x">
 const elementos = document.querySelectorAll('.animar-titulo');
 
@@ -853,4 +1023,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elementos.forEach(el => observer.observe(el));
-</script>
+    
+</script> </body> </html>
