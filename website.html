@@ -2876,33 +2876,13 @@ const carousel=document.getElementById("carousel");
 
 servicios.forEach((s,index)=>{
 
-let botonAccion = "";
-
-let botonAccion = "";
-
-if(index === 0){
-botonAccion = "window.location.href='tarot.html'";
-}
-
-if(index === 1){
-botonAccion = "window.location.href='oraculo.html'";
-}
-
-if(index === 2){
-botonAccion = "window.location.href='reiki.html'";
-}
-
-if(index === 3){
-botonAccion = "window.location.href='radiestesia.html'";
-}
-
-if(index === 4){
-botonAccion = "window.location.href='limpieza.html'";
-}
-
-if(index === 5){
-botonAccion = "window.location.href='rituales.html'";
-}
+let botonAccion = ""; 
+  if(index === 0){ botonAccion = "document.getElementById('tarot-terapeutico').scrollIntoView({behavior:'smooth'})"; } 
+  if(index === 1){ botonAccion = "document.getElementById('lectura-oraculo').scrollIntoView({behavior:'smooth'})"; } 
+  if(index === 2){ botonAccion = "document.getElementById('reiki').scrollIntoView({behavior:'smooth'})"; } 
+  if(index === 3){ botonAccion = "document.getElementById('radiestesia').scrollIntoView({behavior:'smooth'})"; } 
+  if(index === 4){ botonAccion = "document.getElementById('limpiezas-ankh').scrollIntoView({behavior:'smooth'})"; } 
+  if(index === 5){ botonAccion = "document.getElementById('rituales-energeticos').scrollIntoView({behavior:'smooth'})"; }
 
 carousel.innerHTML+=`
 
