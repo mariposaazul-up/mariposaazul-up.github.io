@@ -1800,8 +1800,9 @@ text-shadow:
 
 .destello{
   position:absolute;
-  width:20px;
-  height:20px;
+  z-index:-1;
+  width:15px;
+  height:15px;
   pointer-events:none;
   opacity:0.9;
   animation:brillo 2s infinite ease-in-out;
@@ -2310,7 +2311,7 @@ for(let i=0; i<45; i++){
   d.style.top = Math.random() * 100 + "%";
   d.style.left = Math.random() * 100 + "%";
   d.style.animationDelay = Math.random() * 3 + "s";
-  d.style.transform = "scale(" + (Math.random() * 0.8 + 0.6) + ")";
+  d.style.transform = "scale(" + (Math.random() * 0.9 + 0.5) + ")";
 
   container.appendChild(d);
 }
