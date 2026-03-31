@@ -848,12 +848,13 @@ font-size:15px;
   position:relative;
 }
 
+
 .destellos-container{
-  position:fixed;
+  position:absolute;
   top:15vh; /* empieza debajo del hero */
   left:0;
   width:100%;
-  height:calc(100% - 15vh);
+ height:200vh;
   pointer-events:none;
   overflow:hidden;
   z-index:-1;
@@ -1079,7 +1080,7 @@ No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en
   <script>
 const container = document.querySelector('.destellos-container');
 
-for(let i=0; i<50; i++){
+for(let i=0; i<60; i++){
   const d = document.createElement('div');
   d.classList.add('destello');
 
