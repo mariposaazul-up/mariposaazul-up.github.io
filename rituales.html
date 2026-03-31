@@ -427,9 +427,9 @@ background-size:cover;
 background-position:center;
 padding:30px;
 border-radius:28px;
-height:100%;
-display:flex !important; 
-flex-direction:column !important;
+
+display:flex;
+flex-direction:column;
 align-items:center;
 
 box-shadow:
@@ -445,14 +445,13 @@ font-weight:bold;
 font-size:32px;
 color:white;
 text-shadow:2px 3px 6px rgba(0,0,0,0.4);
-margin-bottom:16px;
+margin-bottom:26px;
   text-align:center; 
 }
 
 /* ================= FRAME ================= */
 
 .catalogo-frame{
-  margin-bottom:15px;
 position:relative;
 min-width:100%;
 aspect-ratio:1/1;
@@ -552,14 +551,14 @@ drop-shadow(0 0 14px #cfd3db);
 font-family:'NotoEthiopic';
 font-size:15px;
 color:white;
-flex-grow:1;
+
 text-align:center;
 
 margin:20px 0;
 
 text-shadow:0 2px 6px rgba(0,0,0,0.4);
 }
-  
+
 .descripcion-pequeño{
 font-size:13px;
 }
@@ -571,23 +570,18 @@ font-size:19px;
 .descripcion-mas-grande{
 font-size:22px;
 }
-
 /* ================= PRECIO ================= */
 
 .catalogo-precio{
 font-family:'Lobster';
 font-size:30px;
 color:white;
-text-align:center; 
-margin:10px;
-margin-top:auto;
+
+margin:10px 0 20px;
+
 text-shadow:0 2px 6px rgba(0,0,0,0.4);
 }
 
-.precio-pequeno{
-  font-size:22px;
-  text-align: center; 
-}
 /* ================= BOTON ================= */
 
 .catalogo-btn{
@@ -610,22 +604,6 @@ transition:0.3s;
 background:rgba(255,255,255,0.15);
 }
 
-.catalogo-card{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between; /* 🔥 ESTA ES LA CLAVE */
-}
-
-.catalogo-descripcion{
-  flex-grow:1;
-}
-
-.card-vinculo{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-  
 /* ================= HERO FINAL ================= */
 
 .cierre-final{
