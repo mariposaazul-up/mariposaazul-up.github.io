@@ -1789,12 +1789,9 @@ text-shadow:
 }
 
 .nubes{
-  position:fixed;
-  top:0;
-  left:0;
+  position:absolute;
   width:140px; /* importante para que no se corte */
   height:90px;
-  pointer-events:none;
   z-index:-1;
 filter:blur(25px);
   opacity:0.25;
@@ -1808,12 +1805,16 @@ filter:blur(25px);
 
  @keyframes moverNubes{
   0%{
-    transform:translateX(0);
+    transform:translate(0px, 0px);
   }
   100%{
-    transform:translateX(-50%);
+    transform:translate(0px, 0px);
   }
 }
+
+.n1{ top:20%; left:10%; }
+.n2{ top:50%; left:60%; }
+.n3{ top:75%; left:30%; }
   
 </style>  </head>  <body>  <div class="estrellas-extra"></div> <div class="nubes"></div>
   <section class="hero">
