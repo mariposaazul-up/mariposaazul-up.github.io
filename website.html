@@ -1839,6 +1839,57 @@ radial-gradient(circle at 60% 40%, rgba(14,12,89,0.15) 0%, transparent 50%);
 
   z-index:9999;
 }
+
+<!-- Contenedor para las nubes -->
+<div id="clouds">
+  <div class="cloud x1"></div>
+  <div class="cloud x2"></div>
+  <div class="cloud x3"></div>
+</div>
+  /* Diseño básico de la nube */
+  .cloud {
+    width: 200px; height: 60px;
+    background: rgba(255, 255, 255, 0.8); /* Blanco con 80% de opacidad (transparente) */
+    border-radius: 200px;
+    position: relative; 
+  }
+
+  /* Círculos para darle forma a la nube */
+  .cloud:after, .cloud:before {
+    content: '';
+    position: absolute; 
+    background: rgba(255, 255, 255, 0.8);
+    width: 100px; height: 80px;
+    top: -15px; left: 10px;
+    border-radius: 100px;
+  }
+
+  .cloud:after {
+    width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
+  }
+
+  /* Animación de movimiento */
+  @keyframes moveclouds {
+    0% { margin-left: 1000px; }
+    100% { margin-left: -1000px; }
+  }
+
+  /* Ajustes individuales por cada nube */
+  .x1 { animation: moveclouds 15s linear infinite; }
+  .x2 { 
+    left: 200px; 
+    transform: scale(0.6); 
+    opacity: 0.5; /* Más transparente */
+    animation: moveclouds 25s linear infinite; 
+  }
+  .x3 { 
+    left: -250px; top: -200px; 
+    transform: scale(0.8); 
+    opacity: 0.3; /* Muy transparente */
+    animation: moveclouds 20s linear infinite; 
+  }
+
 </style>  </head>  <body> <div class="test-nube"></div> <div class="niebla"></div> <div class="estrellas-extra"></div>
   <section class="hero">
 
