@@ -1829,7 +1829,13 @@ text-shadow:
   left:0;
   width:100%;
   height:100%;
-  background:red;
+
+  background:
+    radial-gradient(circle at 30% 40%, rgba(0,0,0,0.4) 0%, transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(0,0,0,0.3) 0%, transparent 60%);
+
+  filter:blur(60px);
+
   z-index:9999;
 }
 </style>  </head>  <body> <div class="test-nube"></div> <div class="niebla"></div> <div class="estrellas-extra"></div>
