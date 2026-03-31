@@ -2877,7 +2877,10 @@ const carousel=document.getElementById("carousel");
 servicios.forEach((s,index)=>{
 
 let botonAccion = ""; 
-  if(index === 0){ botonAccion = "document.getElementById('tarot-terapeutico').scrollIntoView({behavior:'smooth'})"; } 
+ if(index === 0){
+botonAccion = () => window.location.href = "tarot.html";
+}
+ 
   if(index === 1){ botonAccion = "document.getElementById('lectura-oraculo').scrollIntoView({behavior:'smooth'})"; } 
   if(index === 2){ botonAccion = "document.getElementById('reiki').scrollIntoView({behavior:'smooth'})"; } 
   if(index === 3){ botonAccion = "document.getElementById('radiestesia').scrollIntoView({behavior:'smooth'})"; } 
