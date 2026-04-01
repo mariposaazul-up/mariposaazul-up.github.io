@@ -1972,11 +1972,63 @@ transform:scale(0.95);
 box-shadow:
 0 0 3px rgba(120,170,220,0.3);
 }
-  
+
+.hero{
+  position:relative;
+}
+
+/* BARRA MINI */
+.hero-mini{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+pointer-events:none;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+
+  opacity:0;
+  transform:translateY(-100%);
+  transition:all 0.4s ease;
+
+  z-index:9999;
+}
+
+/* CUANDO APARECE */
+.hero-mini.active{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+
+/* LOGO */
+.mini-logo{
+  height:40px;
+}
+
+/* TEXTO (usa lo mismo que tu hero) */
+.mini-title{
+  font-family:'Halja';
+  font-size:22px;
+  color:white;
+
+  text-shadow:
+  0 0 6px rgba(255,255,255,0.8),
+  0 0 18px rgba(255,255,255,0.5);
+}
+
 </style>  </head>  <body>
   <div class="estrellas-extra"></div>
   <section class="hero">
-
+<div class="hero-mini">
+  <img src="logo mariposa azul.jpeg" class="mini-logo">
+  <span class="mini-title">Mariposa Azul</span>
+</div>
 <h1 class="hero-title">Mariposa Azul</h1>    
 <div class="hero-subtitle">Terapias Holísticas, Tarot Evolutivo y Rituales</div>    
 <div class="hero-emojis">🥀 🥀 🥀</div>    
@@ -2460,6 +2512,19 @@ for(let i=0; i<60; i++){
 
   container.appendChild(d);
 }
+
+const hero = document.querySelector('.hero');
+const mini = document.querySelector('.hero-mini');
+
+window.addEventListener('scroll', () => {
+  const trigger = hero.offsetHeight * 0.5; // ← mitad del hero
+
+  if(window.scrollY > trigger){
+    mini.classList.add('active');
+  } else {
+    mini.classList.remove('active');
+  }
+});
 </script>
 
 </body>
