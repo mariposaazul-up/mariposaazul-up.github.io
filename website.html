@@ -2027,7 +2027,7 @@ pointer-events:none;
 
 .titulo-sanemos{
   text-align:center;
-  margin:60px 0 20px 0;
+  margin:140px 0 20px 0;
 }
 
 .titulo-sanemos h2{
@@ -2502,6 +2502,10 @@ entry.target.classList.add('visible');
 
 titulos.forEach(titulo=>{
 observer.observe(titulo);
+});
+
+document.querySelectorAll('.titulo-sanemos h2').forEach(el=>{
+  observer.observe(el);
 });
 
 const enfin = document.querySelector('.animar-enfin');
