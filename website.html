@@ -2065,6 +2065,81 @@ animation: titileoSuave 2s ease-in-out infinite alternate;
   0 0 18px rgba(120,170,220,0.7),
   0 0 28px rgba(25,87,145,0.5);
 }
+
+.oraculo-layout{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  gap:60px;
+  width:100%;
+}
+
+.lado{
+  width:200px; /* espacio lateral */
+  min-height:300px;
+}
+
+.lado-centro{
+  display:flex;
+  justify-content:center;
+}
+
+@media (max-width:768px){
+
+  .oraculo-layout{
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+  }
+
+  .lado-izquierdo{
+    order:1;
+  }
+
+  .lado-derecho{
+    order:2;
+  }
+
+  .lado-centro{
+    order:3;
+  }
+
+}
+
+.titulo-lado{
+  font-family:'Halja';
+  font-size:32px; /* más pequeño que el principal */
+  font-weight:300;
+  text-align:center;
+  color:#195791;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+
+  animation: titileoSuave 2s ease-in-out infinite alternate;
+
+  margin-bottom:20px;
+}
+
+.texto-lado1{
+  font-family:'NotoEthiopic'; /* después lo cambias */
+  font-size:15px;
+  text-align:center;
+  line-height:1.5;
+  color:#195791;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+
+  margin:0 auto;
+  max-width:180px;
+}
   
 </style>  </head>  <body>
   <div class="estrellas-extra"></div>
@@ -2083,6 +2158,23 @@ animation: titileoSuave 2s ease-in-out infinite alternate;
 <section class="titulo-sanemos">
   <h2 class="animar-titulo">¿Sanemos Juntxs?</h2>
 </section>
+  <section class="oraculo-layout">
+
+  <!-- IZQUIERDA -->
+  <div class="lado lado-izquierdo">
+
+  <h3 class="titulo-lado animar-titulo">
+    Enfoque Terapéutico
+  </h3>
+  <p class="texto-lado1">
+    Exploración consciente de tu mundo interno<br>
+    para comprender, integrar y transformar<br>
+    tu experiencia emocional
+  </p>
+</div>
+
+  <!-- CENTRO (tu bloque actual) -->
+  <div class="lado-centro">
 <section class="bloque-oraculo">
 <div class="mensaje-universo">
   Te regalo un mensajito del<br> 
@@ -2101,6 +2193,12 @@ animation: titileoSuave 2s ease-in-out infinite alternate;
   <!-- BOTÓN -->
   <button id="btnOraculo" class="btn-card">Click Aquí¡!</button>
   </section>
+    </div>
+
+  <!-- DERECHA -->
+  <div class="lado lado-derecho"></div>
+
+</section>
   <section class="fondo-celeste">   
   <div class="destellos-container"></div>
 <div class="contenido-celeste">    
