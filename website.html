@@ -2025,6 +2025,34 @@ pointer-events:none;
   0 0 18px rgba(255,255,255,0.5);
 }
 
+.titulo-sanemos{
+  text-align:center;
+  margin:60px 0 20px 0;
+}
+
+.titulo-sanemos h2{
+  font-family:'Halja';
+  font-size:60px;
+  font-weight:300;
+  color:#195791;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+animation: titileoSuave 2s ease-in-out infinite alternate;
+  opacity:0;
+  transform:translateY(25px);
+  transition:all 1s ease;
+}
+
+.titulo-sanemos h2.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
 </style>  </head>  <body>
   <div class="estrellas-extra"></div>
   <section class="hero">
@@ -2038,7 +2066,11 @@ pointer-events:none;
 <div class="hero-text">Espacio de Compañía, Amor & Sanación</div>    
 <button class="btn-agenda" onclick="enviarWhatsApp()">Agenda Aquí</button>    
 </section> 
-
+  
+<section class="titulo-sanemos">
+  <h2 class="animar-titulo">¿Sanemos Juntxs?</h2>
+</section>
+  
   <div class="image-frame-vertical">
 <iframe id="efectooraculoFrame" src="https://mariposaazul-up.github.io/efectooraculo/efecto.html"></iframe>
 
@@ -2520,7 +2552,7 @@ const hero = document.querySelector('.hero');
 const mini = document.querySelector('.hero-mini');
 
 window.addEventListener('scroll', () => {
-  const trigger = hero.offsetHeight * 0.89; // ← mitad del hero
+  const trigger = hero.offsetHeight * 0.80; // ← mitad del hero
 
   if(window.scrollY > trigger){
     mini.classList.add('active');
