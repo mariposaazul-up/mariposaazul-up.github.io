@@ -1883,6 +1883,91 @@ text-shadow:
     transform: scale(1);
   }
 }
+
+#oraculoFrame{
+  width:240px;
+  height:414px;
+  border:none;
+  display:block;
+  margin:auto;
+}
+
+.image-frame-vertical{
+position:relative;
+width:85%;
+aspect-ratio:854 / 1476;
+margin-bottom:16px;
+border:2px solid #9ea4b3;
+border-radius:22px;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:
+0 0 10px #c5c9d3,
+0 0 25px #9ea4b3;
+}
+
+.image-frame-vertical img.main{
+width:88%;
+height:88%;
+object-fit:contain; /* 🔥 importante: evita cortes */
+border-radius:18px;
+}
+
+/* estrellas */
+.star1{
+position:absolute;
+width:28px;
+filter:
+drop-shadow(0 0 6px #ffffff)
+drop-shadow(0 0 14px #cfd3db);
+}
+
+/* posiciones optimizadas para vertical */
+.star1.s1{ top:-14px; left:25%; }
+.star1.s2{ bottom:-16px; right:25%; }
+.star1.s3{ top:50%; left:-16px; transform:translateY(-50%); }
+.star1.s4{ top:50%; right:-14px; transform:translateY(-50%); }
+
+.btn-card{
+padding:8px 24px;
+border-radius:22px;
+border:1.5px solid #d9dcde;
+background:transparent;
+font-family:'NotoEthiopic';
+color:#d9dcde;
+cursor:pointer;
+
+text-shadow:
+0 0 6px rgba(120,170,220,1),
+0 0 8px rgba(120,170,220,0.9),
+0 0 18px rgba(120,170,220,0.7),
+0 0 28px rgba(25,87,145,0.5);
+
+box-shadow:
+0 0 8px rgba(120,170,220,0.9),
+0 0 18px rgba(120,170,220,0.7),
+0 0 28px rgba(25,87,145,0.5);
+
+transition: all 0.15s ease;
+}
+
+.btn-card:hover{
+background:rgba(0,0,0,0.25);
+
+box-shadow:
+0 0 6px rgba(120,170,220,0.5),
+0 0 12px rgba(120,170,220,0.4),
+0 0 18px rgba(25,87,145,0.3);
+}
+
+.btn-card:active{
+background:rgba(0,0,0,0.4);
+transform:scale(0.95);
+
+box-shadow:
+0 0 3px rgba(120,170,220,0.3);
+}
   
 </style>  </head>  <body>
   <div class="estrellas-extra"></div>
@@ -1893,7 +1978,24 @@ text-shadow:
 <div class="hero-emojis">🥀 🥀 🥀</div>    
 <div class="hero-text">Espacio de Compañía, Amor & Sanación</div>    
 <button class="btn-agenda" onclick="enviarWhatsApp()">Agenda Aquí</button>    
-</section>  <section class="fondo-celeste">   
+</section> 
+  
+<iframe id="efectooraculoFrame" src="index.html"></iframe>
+
+  <div class="image-frame-vertical">
+<iframe id="efectooraculoFrame" src="index.html"></iframe>
+
+  <!-- ESTRELLAS -->
+  <img src="estrella.png" class="star1 s1">
+  <img src="estrella.png" class="star1 s2">
+  <img src="estrella.png" class="star1 s3">
+  <img src="estrella.png" class="star1 s4">
+
+</div>
+  <!-- BOTÓN -->
+  <button id="btnOraculo" class="btn-card">Click Aquí</button>
+  
+  <section class="fondo-celeste">   
   <div class="destellos-container"></div>
 <div class="contenido-celeste">    
 <h2 >¿Qué estás buscando?</h2>   
@@ -2332,7 +2434,16 @@ track.addEventListener('scroll', () => {
 
       
 </script>  
+  
+<script>
+const btn = document.getElementById("btnOraculo")
+const frame = document.getElementById("efectooraculoFrame")
 
+btn.addEventListener("click", ()=>{
+  frame.contentWindow.postMessage("activar-oraculo", "*")
+})
+</script>
+  
 <script>
 const container = document.querySelector('.destellos-container');
 
