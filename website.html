@@ -1989,9 +1989,8 @@ box-shadow:
   justify-content:center;
   gap:12px;
 pointer-events:none;
-  background:rgba(0,0,0,0.6);
+ background: rgba(14, 42, 71, 0.85);
   backdrop-filter:blur(6px);
-
   opacity:0;
   transform:translateY(-100%);
   transition:all 0.4s ease;
@@ -2517,7 +2516,7 @@ const hero = document.querySelector('.hero');
 const mini = document.querySelector('.hero-mini');
 
 window.addEventListener('scroll', () => {
-  const trigger = hero.offsetHeight * 0.5; // ← mitad del hero
+  const trigger = hero.offsetHeight * 0.97; // ← mitad del hero
 
   if(window.scrollY > trigger){
     mini.classList.add('active');
