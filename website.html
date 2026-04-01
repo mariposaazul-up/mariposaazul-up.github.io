@@ -28,6 +28,21 @@ font-family: 'Lobster';
 src: url('LobsterTwo-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Milk Yogurt';
+  src: url('Milk Yogurt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nicholas';
+  src: url('Nicholas.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nicholas';
+  src: url('Nicholas.ttf') format('truetype');
+}
+  
 body{
 margin:0;
 padding:0;
@@ -2107,25 +2122,50 @@ animation: titileoSuave 2s ease-in-out infinite alternate;
 }
 
 .titulo-lado{
-  font-family:'Halja';
+  font-family:'Milk Yogurt';
   font-size:32px; /* más pequeño que el principal */
   font-weight:300;
   text-align:center;
-  color:#195791;
+  color: #e0a8b7;
 
-  text-shadow:
-  0 0 6px rgba(120,170,220,0.9),
-  0 0 14px rgba(120,170,220,0.8),
-  0 0 25px rgba(25,87,145,0.6),
-  0 0 50px rgba(25,87,145,0.4);
+text-shadow:
+0 0 6px rgba(255,210,220,0.9),
+0 0 14px rgba(255,180,200,0.8),
+0 0 25px rgba(224,168,183,0.7),
+0 0 50px rgba(224,168,183,0.5);
 
-  animation: titileoSuave 2s ease-in-out infinite alternate;
+  animation: titileoSuavee 2s ease-in-out infinite alternate;
 
   margin-bottom:20px;
 }
 
+ @keyframes titileoSuavee{
+0%{
+text-shadow:
+0 0 6px rgba(255,210,220,0.6),
+0 0 14px rgba(255,180,200,0.5),
+0 0 25px rgba(224,168,183,0.4),
+0 0 50px rgba(224,168,183,0.3);
+}
+
+50%{
+text-shadow:
+0 0 6px rgba(255,210,220,1),
+0 0 14px rgba(255,180,200,1),
+0 0 25px rgba(224,168,183,0.9),
+0 0 50px rgba(224,168,183,0.7);
+}
+
+100%{
+  text-shadow:
+0 0 6px rgba(255,210,220,0.6),
+0 0 14px rgba(255,180,200,0.5),
+0 0 25px rgba(224,168,183,0.4),
+0 0 50px rgba(224,168,183,0.3);
+}
+}
 .texto-lado1{
-  font-family:'NotoEthiopic'; /* después lo cambias */
+  font-family:'Nicholas'; /* después lo cambias */
   font-size:15px;
   text-align:center;
   line-height:1.5;
