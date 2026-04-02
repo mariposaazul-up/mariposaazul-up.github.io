@@ -2322,8 +2322,8 @@ text-shadow:
 }
 
 .iframe-testimonios{
-  width:215px;
-  height:307px;/* 👈 exacto al tamaño de tus imágenes */
+  width:235px;
+  height:327px;/* 👈 exacto al tamaño de tus imágenes */
 border-radius:0 !important;
   border:none;
 flex-shrink:0; 
@@ -2348,8 +2348,8 @@ flex-shrink:0;
 
 .iframe-marco-estrellas{
   position:relative;
-  width:215px;
-  height:307px;
+  width:235px;
+  height:327px;
  border:2px solid #9ea4b3;
   box-shadow:
     0 0 10px #c5c9d3,
@@ -2390,9 +2390,43 @@ flex-shrink:0;
 .star2.s5{ top:50%; left:-16px; transform:translateY(-50%); }
 .star2.s6{ top:50%; right:-16px; transform:translateY(-50%); }
 
- border:2px solid #9ea4b3;
-  border-radius:22px;
-  
+
+@media (max-width:768px){
+
+  .testimonios-card{
+    flex-direction:column; /* 🔥 apila todo */
+    align-items:center;
+    text-align:center;
+  }
+
+  .testimonios-left{
+    width:100%;
+    padding:30px 20px 10px 20px;
+  }
+
+  .testimonios-right{
+    width:100%;
+    padding:20px 0;
+  }
+
+  .iframe-marco-estrellas{
+    margin:0 auto;
+  }
+
+  .desliza{
+    margin-top:8px;
+    font-size:14px;
+  }
+
+  .titulo-testimonios .main{
+    font-size:42px; /* más pequeño para que no se corte */
+  }
+
+  .titulo-testimonios .sub{
+    font-size:16px;
+  }
+
+}
 </style>  </head>  <body>
 
   
