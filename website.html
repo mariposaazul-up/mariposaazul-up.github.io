@@ -2322,14 +2322,29 @@ text-shadow:
 
 .iframe-testimonios{
   width:223.5px;
-  height:307px; /* 👈 exacto al tamaño de tus imágenes */
+  height:315px; /* 👈 exacto al tamaño de tus imágenes */
 
   border:none;
   border-radius:18px;
 flex-shrink:0; 
   display:block;
 }
-  
+
+.desliza{
+  margin-top:10px;
+  font-family:'Nicholas';
+  font-size:16px;
+  color:#cfd3da; /* plateado */
+
+  /* engrosado 0.3 */
+  text-shadow:
+  0.3px 0 #cfd3da,
+  -0.3px 0 #cfd3da,
+  0 0.3px #cfd3da,
+  0 -0.3px #cfd3da;
+
+  opacity:1; /* sin transparencia */
+}
 </style>  </head>  <body>
 
   
@@ -2569,6 +2584,7 @@ que habita en tu alma
     <span class="sub">Experiencias en</span><br>
     <span class="main">Mariposa Azul</span>
   </h2>
+  <span class="desliza">Desliza las Imagenes >>></span>
 </div>
 
     <!-- DERECHA -->
