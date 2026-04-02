@@ -2273,23 +2273,42 @@ text-shadow:
   padding:40px 20px;
 
   /* leve diferenciación */
-  background:rgba(30,55,110,0.65);
+  background:transparent;
 }
 
-.testimonios-left h2{
-  font-family:'Halja';
-  font-size:clamp(40px,4vw,60px);
-  font-weight:300;
+/* TEXTO IZQUIERDA TESTIMONIOS */
 
+.titulo-testimonios{
+  margin:0;
+  line-height:1.1;
+}
+
+/* parte pequeña */
+.titulo-testimonios .sub{
+  display:block;
+  font-family:'NotoEthiopic';
+  font-size:clamp(16px,1.2vw,20px);
   color:#d9dcde;
+  opacity:0.9;
 
   text-shadow:
-  0 0 6px rgba(120,170,220,0.9),
-  0 0 14px rgba(120,170,220,0.8),
-  0 0 25px rgba(25,87,145,0.6),
-  0 0 50px rgba(25,87,145,0.4);
+  0 0 4px rgba(255,255,255,0.6),
+  0 0 10px rgba(255,255,255,0.4);
 }
 
+/* parte principal */
+.titulo-testimonios .main{
+  display:block;
+  font-family:'Halja';
+  font-size:clamp(36px,3.5vw,58px);
+  font-weight:300;
+  color:#ffffff;
+
+  text-shadow:
+  0 0 6px rgba(255,255,255,0.9),
+  0 0 18px rgba(255,255,255,0.6),
+  0 0 35px rgba(255,255,255,0.4);
+}
 /* DERECHA */
 
 .testimonios-right{
