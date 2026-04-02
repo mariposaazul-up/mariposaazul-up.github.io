@@ -2203,6 +2203,22 @@ text-shadow:
   margin-top:10px;
 }
 
+.titulo-con-icono{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.titulo-con-icono h2{
+  margin:0;
+}
+
+.icono{
+  width:1em;
+  opacity:0.9;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.6));
+}
+
 </style>  </head>  <body>
   <div class="estrellas-extra"></div>
   <section class="hero">
@@ -2225,18 +2241,24 @@ text-shadow:
   <!-- IZQUIERDA -->
   <div class="lado lado-izquierdo">
 
+  <div class="titulo-con-icono">
+  <img src="fresa.png" class="icono">
   <h3 class="titulo-lado animar-titulo">
     Enfoque Terapéutico
   </h3>
+</div>
   <p class="texto-lado1">
     Exploracion consciente de tu mundo interno
     para comprender, integrar y transformar
     tu experiencia emocional
   </p>
-    <h3 class="titulo-lado animar-titulo titulo-lado-2">
+   <div class="titulo-con-icono derecha">
+  <h3 class="titulo-lado animar-titulo titulo-lado-2">
     Re-Conectar con tu
-      Verdad
+    Verdad
   </h3>
+  <img src="flor.png" class="icono">
+</div>
      <!-- NUEVA DESCRIPCIÓN -->
   <p class="texto-lado1">
     Volver a ti, mas alla del ruido
@@ -2271,9 +2293,12 @@ que habita en tu alma
   <!-- DERECHA -->
 <div class="lado lado-derecho">
 
+ <div class="titulo-con-icono">
+  <img src="cora.png" class="icono">
   <h3 class="titulo-lado animar-titulo titulo-lado-2">
     Autoconciencia
   </h3>
+</div>
 
   <p class="texto-lado1">
     Observar sin juicio lo que habita en ti
@@ -2281,9 +2306,12 @@ que habita en tu alma
     y tambien tu propia luz
   </p>
  <!-- NUEVO TÍTULO -->
+ <div class="titulo-con-icono derecha">
   <h3 class="titulo-lado animar-titulo titulo-lado-2">
     Acompañamiento en tu proceso
   </h3>
+  <img src="compartir.png" class="icono">
+</div>
 
   <!-- NUEVA DESCRIPCIÓN -->
   <p class="texto-lado1">
