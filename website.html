@@ -2338,13 +2338,52 @@ flex-shrink:0;
 
   /* engrosado 0.3 */
   text-shadow:
-  0.3px 0 #cfd3da,
-  -0.3px 0 #cfd3da,
-  0 0.3px #cfd3da,
-  0 -0.3px #cfd3da;
+  0.2px 0 #cfd3da,
+  -0.2px 0 #cfd3da,
+  0 0.2px #cfd3da,
+  0 -0.2px #cfd3da;
 
   opacity:1; /* sin transparencia */
 }
+
+.iframe-marco-estrellas{
+  position:relative;
+  width:223.5px;
+  height:315px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* iframe */
+.iframe-marco-estrellas iframe{
+  width:100%;
+  height:100%;
+  border:none;
+  border-radius:18px;
+}
+
+/* ⭐ estrellas */
+.star2{
+  position:absolute;
+  width:26px;
+
+  filter:
+  drop-shadow(0 0 6px #ffffff)
+  drop-shadow(0 0 14px #cfd3db);
+}
+
+/* posiciones (6 estrellas) */
+.star2.s1{ top:-14px; left:20%; }
+.star2.s2{ top:-10px; right:20%; }
+
+.star2.s3{ bottom:-14px; left:25%; }
+.star2.s4{ bottom:-10px; right:25%; }
+
+.star2.s5{ top:50%; left:-16px; transform:translateY(-50%); }
+.star2.s6{ top:50%; right:-16px; transform:translateY(-50%); }
+  
 </style>  </head>  <body>
 
   
@@ -2589,10 +2628,22 @@ que habita en tu alma
 
     <!-- DERECHA -->
     <div class="testimonios-right">
-     <iframe 
-  src="https://mariposaazul-up.github.io/historia/historia.html"
-  class="iframe-testimonios">
-</iframe>
+   <div class="iframe-marco-estrellas">
+
+  <iframe 
+    src="https://mariposaazul-up.github.io/historia/historia.html"
+    class="iframe-testimonios">
+  </iframe>
+
+  <!-- ⭐ ESTRELLAS -->
+  <img src="estrella.png" class="star2 s1">
+  <img src="estrella.png" class="star2 s2">
+  <img src="estrella.png" class="star2 s3">
+  <img src="estrella.png" class="star2 s4">
+  <img src="estrella.png" class="star2 s5">
+  <img src="estrella.png" class="star2 s6">
+
+</div>
     </div>
 
   </div>
