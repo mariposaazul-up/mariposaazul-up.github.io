@@ -2235,8 +2235,75 @@ text-shadow:
 .titulo-con-icono h3{
   display:inline-block; /* 👈 clave real */
 }
+
+/* ===== TESTIMONIOS BASE ===== */
+
+.testimonios-section{
+  padding:80px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+.testimonios-card{
+  width:100%;
+  max-width:1100px;
+
+  display:flex;
+  align-items:center;
+
+  background:rgba(30,55,110,0.55); /* azul tipo ojito pero más translúcido */
+
+  border-radius:25px;
+
+  box-shadow:
+  -12px 14px 25px rgba(0,0,0,0.35);
+
+  overflow:hidden;
+}
+
+/* IZQUIERDA */
+
+.testimonios-left{
+  width:30%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  padding:40px 20px;
+
+  /* leve diferenciación */
+  background:rgba(30,55,110,0.65);
+}
+
+.testimonios-left h2{
+  font-family:'Halja';
+  font-size:clamp(40px,4vw,60px);
+  font-weight:300;
+
+  color:#d9dcde;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+}
+
+/* DERECHA */
+
+.testimonios-right{
+  width:70%;
+  padding:50px 40px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
   
 </style>  </head>  <body>
+
+  
   <div class="estrellas-extra"></div>
   <section class="hero">
 <div class="hero-mini">
@@ -2462,6 +2529,25 @@ que habita en tu alma
     detrás de Mariposa Azul y cuáles son los principios<br>
     de este espacio**
 </p>
+
+  <section class="testimonios-section">
+
+  <div class="testimonios-card">
+
+    <!-- IZQUIERDA -->
+    <div class="testimonios-left">
+      <h2>Voces<br>del alma</h2>
+    </div>
+
+    <!-- DERECHA -->
+    <div class="testimonios-right">
+      <!-- aquí después van los testimonios -->
+    </div>
+
+  </div>
+
+</section>
+  
 <div class="brillo-final">
   <img src="manos.png" alt="decoración mágica">
 </div>
