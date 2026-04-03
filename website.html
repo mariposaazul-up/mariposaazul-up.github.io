@@ -2439,11 +2439,7 @@ flex-shrink:0;
 }
 
 /* 📱 MÓVIL */
-@media (max-width:768px){
-  .testimonios-card{
-    max-width:90%;
-  }
-}
+
 
 /* 📲 TABLET */
 @media (min-width:769px) and (max-width:1024px){
@@ -2451,7 +2447,19 @@ flex-shrink:0;
     max-width:80%;
   }
 }
-  
+
+@media (max-width:768px){
+
+  .testimonios-section{
+    padding:10px 10px; /* 🔥 reduce los lados */
+  }
+
+  .testimonios-card{
+    max-width:100%;
+    width:100%;
+  }
+
+}
 </style>  </head>  <body>
 
   
