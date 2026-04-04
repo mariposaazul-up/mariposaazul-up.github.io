@@ -1,0 +1,1098 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mariposa Azul</title>
+
+<style>
+
+/* ================= FUENTES ORIGINALES ================= */
+
+@font-face {
+  font-family: 'Cathalia';
+  src: url('Cathalia.otf') format('opentype');
+}
+  
+@font-face {
+  font-family: 'Halja';
+  src: url('HALJA-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoEthiopic';
+  src: url('NotoSerifEthiopic-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('LobsterTwo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Glacial Indifference';
+src: url('GlacialIndifference-Regular.otf') format('opentype');
+}
+  
+/* ================= BASE ================= */
+
+body{
+  margin:0;
+  padding:0;
+  font-family:'NotoEthiopic', serif;
+}
+
+/* ================= BODY ================= */
+
+body{
+margin:0;
+padding:0;
+    padding-top:70px;
+font-family:'NotoEthiopic',serif;
+overflow-x:hidden;
+background-color:#4d7299;
+}
+
+/* ================= ESTRELLAS CAPA 1 ================= */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+
+background-image:
+
+/* ⭐ GRANDES (10) */
+radial-gradient(circle at 5% 10%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 15% 30%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 25% 60%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 35% 20%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 45% 75%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+
+radial-gradient(circle at 55% 40%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 65% 15%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 75% 55%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 85% 25%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px),
+radial-gradient(circle at 95% 70%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1.2px, rgba(120,170,220,0.9) 2.4px, transparent 3.4px);
+
+animation: titilarA 2s ease-in-out infinite alternate;
+}
+
+/* ================= ESTRELLAS CAPA 2 ================= */
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+
+background-image:
+
+radial-gradient(circle at 10% 80%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 20% 50%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 30% 10%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 40% 65%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 50% 20%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+
+radial-gradient(circle at 60% 85%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 70% 35%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 80% 60%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 90% 15%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 15% 5%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+
+radial-gradient(circle at 25% 85%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 35% 45%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 45% 5%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 55% 55%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px),
+radial-gradient(circle at 65% 95%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 1px, rgba(120,170,220,0.8) 2px, transparent 3px);
+
+animation: titilarB 3s ease-in-out infinite alternate;
+}
+
+/* ================= ESTRELLAS CAPA 3 ================= */
+
+.estrellas-extra{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+
+background-image:
+radial-gradient(circle at 75% 5%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 85% 95%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 95% 40%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 5% 95%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 18% 60%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+
+radial-gradient(circle at 28% 35%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 38% 85%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 48% 30%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 58% 75%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 68% 10%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+
+radial-gradient(circle at 78% 50%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 88% 20%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 98% 80%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 12% 15%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+radial-gradient(circle at 22% 75%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.9px, rgba(120,170,220,0.7) 1.8px, transparent 2.6px),
+
+radial-gradient(circle at 8% 22%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 14% 78%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 22% 48%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 30% 70%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 38% 18%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+
+radial-gradient(circle at 46% 82%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 54% 28%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 62% 66%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 70% 12%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 78% 52%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+
+radial-gradient(circle at 86% 34%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 94% 88%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 18% 6%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 44% 6%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px),
+radial-gradient(circle at 66% 92%, rgba(255,255,255,1) 0px, rgba(255,255,255,1) 0.6px, rgba(120,170,220,0.7) 1.2px, transparent 1.7px);
+
+animation: titilarC 4s ease-in-out infinite alternate;
+}
+  
+/* ================= ANIMACIONES ================= */
+
+@keyframes titilarA{
+0%{ opacity:0.4; }
+50%{ opacity:1; }
+100%{ opacity:0.6; }
+}
+
+@keyframes titilarB{
+0%{ opacity:0.6; }
+50%{ opacity:0.9; }
+100%{ opacity:0.3; }
+}
+
+@keyframes titilarC{
+0%{ opacity:0.5; }
+50%{ opacity:1; }
+100%{ opacity:0.4; }
+}
+
+@keyframes subirSuave{
+0%{
+opacity:0;
+transform:translateY(25px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+  
+@keyframes titileoSuave{
+0%{
+text-shadow:
+0 0 6px rgba(120,170,220,0.6),
+0 0 14px rgba(120,170,220,0.5),
+0 0 25px rgba(25,87,145,0.4),
+0 0 50px rgba(25,87,145,0.3);
+}
+
+50%{
+text-shadow:
+0 0 10px rgba(120,170,220,1),
+0 0 22px rgba(120,170,220,1),
+0 0 29px rgba(25,87,145,0.9),
+0 0 60px rgba(25,87,145,0.7);
+}
+
+100%{
+text-shadow:
+0 0 6px rgba(120,170,220,0.6),
+0 0 14px rgba(120,170,220,0.5),
+0 0 25px rgba(25,87,145,0.4),
+0 0 50px rgba(25,87,145,0.3);
+}
+}
+
+.brillo{
+display:inline-block;
+animation:brillar 1.5s ease-in-out infinite;
+}
+
+@keyframes brillar{
+0%{ transform:scale(1); filter:drop-shadow(0 0 2px #ffffff); }
+50%{ transform:scale(1.3); filter:drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 18px #ffffff); }
+100%{ transform:scale(1); filter:drop-shadow(0 0 2px #ffffff); }
+}
+  
+/* ================= HERO MINI ================= */
+
+
+.hero-mini{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  background: rgba(14, 42, 71, 1);
+  backdrop-filter:blur(6px);
+  opacity:1;
+  transform:translateY(o);
+  z-index:9999;
+}
+
+.mini-logo{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+
+.mini-title{
+  font-family:'Halja';
+  font-size:22px;
+  color:white;
+
+  text-shadow:
+  0 0 6px rgba(255,255,255,0.8),
+  0 0 18px rgba(255,255,255,0.5);
+}
+
+  .principios-sticker{
+  width:81%;
+  max-width:81%;
+  margin:60px auto;
+  padding:26px 22px 20px 22px !important;
+  box-sizing:border-box;
+}
+.principios-texto p{
+  font-size:13px !important;
+}
+
+.principios-texto strong{
+  font-size:14px !important;
+}
+
+.confesion-contenedor{
+  width:90%;
+}
+
+.confesion-frase{
+  font-size:17px;   /* un poquito más pequeño en móvil */
+  max-width:85%;   /* importante */
+}
+}
+
+@media (max-width:768px){
+  .hero{
+    min-height:60vh;
+  }
+}
+  /* ================= SOBRE MI CONTENIDO ================= */
+.sobre-mi-title{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+
+.sobre-mi-title h2{
+  font-family:'Halja';
+  font-size:clamp(70px,7vw,100px);
+  font-weight:200;
+  margin:0;
+  color:#195791;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+
+  animation: titileoSuave 2s ease-in-out infinite alternate;
+}
+
+.sobre-mi-section{
+  padding-top:45px;
+}
+.sobre-img{
+  height:clamp(55px,6vw,85px);
+  animation:giroSuave 3s ease-in-out infinite;
+}
+  
+@media (max-width:1024px){
+
+  .sobre-mi-derecha{
+    margin-top: 25px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .sobre-mi-derecha{
+    margin-top: 35px;
+  }
+
+}
+  
+@media (max-width:1024px){
+  .sobre-mi-title{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:768px){
+  .sobre-mi-title{
+    margin-bottom: 30px;
+  }
+}
+  
+/* Animación de giro */
+@keyframes giroSuave{
+  0%{ transform:rotate(-6deg); }
+  50%{ transform:rotate(6deg); }
+  100%{ transform:rotate(-6deg); }
+}
+
+/* Animación glow (IMPORTANTE copiarla también) */
+@keyframes titileoSuave{
+  0%{
+    text-shadow:
+    0 0 6px rgba(120,170,220,0.6),
+    0 0 14px rgba(120,170,220,0.5),
+    0 0 25px rgba(25,87,145,0.4),
+    0 0 50px rgba(25,87,145,0.3);
+  }
+
+  50%{
+    text-shadow:
+    0 0 10px rgba(120,170,220,1),
+    0 0 22px rgba(120,170,220,1),
+    0 0 29px rgba(25,87,145,0.9),
+    0 0 60px rgba(25,87,145,0.7);
+  }
+
+  100%{
+    text-shadow:
+    0 0 6px rgba(120,170,220,0.6),
+    0 0 14px rgba(120,170,220,0.5),
+    0 0 25px rgba(25,87,145,0.4),
+    0 0 50px rgba(25,87,145,0.3);
+  }
+}
+  
+.sobre-mi-contenedor{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  gap:80px;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px 80px 20px;
+}
+
+/* ===== IZQUIERDA ===== */
+
+.sobre-mi-izquierda{
+  flex:0 0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+
+  background:white;
+  padding:8px 2px 25px 2px; /* borde inferior más grande tipo polaroid */
+
+  box-shadow:
+    -20px 25px 45px rgba(0,0,0,0.25);
+}
+
+/* Marco estilo catálogo */
+
+.foto-marco{
+  position:relative;
+  width:300px;
+  aspect-ratio:3/4;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:visible;
+}
+
+.foto-scar{
+  width:88%;
+  height:88%;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+/* Mariposas */
+
+.mariposa{
+  position:absolute;
+  width:65px;
+  filter:
+    drop-shadow(0 0 6px rgba(57,84,140,0.5))
+    drop-shadow(0 0 14px rgba(57,84,140,0.3));
+  animation:giroMariposa 6s ease-in-out infinite;
+}
+
+.scar-m1{ top:-20px; left:12%; }
+.scar-m2{ bottom:-25px; right:15%; }
+.scar-m3{ top:45%; left:-30px; width:50px; }
+  
+@keyframes giroMariposa{
+  0%{ transform:rotate(-4deg); }
+  50%{ transform:rotate(4deg); }
+  100%{ transform:rotate(-4deg); }
+}
+
+/* Nombre */
+
+.sobre-mi-nombre{
+  margin-top:25px;
+  font-family:'Lobster';
+  font-size:28px;
+  color:#39548C;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.35),
+    0 0 8px rgba(57,84,140,0.25);
+}
+
+/* ===== DERECHA ===== */
+
+.sobre-mi-derecha{
+  flex:1.4;
+  font-family:'NotoEthiopic';
+  font-size:14px;
+  color:#d9dcde;
+  line-height:1.5;
+font-weight:500;
+  text-shadow:
+0 0 6px rgba(120,170,220,1),
+0 0 8px rgba(120,170,220,0.9),
+0 0 18px rgba(120,170,220,0.7),
+0 0 28px rgba(25,87,145,0.5);
+  background: rgba(57,84,140,0.40);
+  padding: 22px 22px;
+  border-radius: 22px;
+}
+
+.sobre-mi-derecha p{
+  margin-top:0px
+  margin-bottom:0px;
+  text-align:center;
+}
+
+.cierre-sobre-mi{
+  font-family:'Cathalia'  !important;
+  display:block;
+  font-size:17px;
+  line-height:1.5;
+}
+  
+.pausa{
+  display:block;
+  height:8px;
+}
+
+.principios-texto p{
+  margin-bottom:22px;
+}
+
+.principios-texto strong{
+  font-weight:700;
+  display:block;
+  margin-bottom:6px;
+  font-size:17px;
+}
+  /* ===== STICKER PRINCIPIOS ===== */
+
+.principios-sticker{
+  position:relative;
+  max-width:900px;
+  margin:40px auto;
+  padding:55px 45px;
+
+  background:rgba(30,55,110,0.85); /* mismo azul que pagos */
+  color:white;
+  text-align:center;
+
+  border-radius:0; /* puntas rectas */
+
+  box-shadow:-18px 20px 40px rgba(0,0,0,0.35); /* sombra abajo izquierda */
+}
+
+.principios-texto{
+  font-family:'NotoEthiopic';
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* Decoraciones */
+
+.decor{
+  position:absolute;
+  width:80px;
+  filter:
+    drop-shadow(0 0 6px rgba(255,255,255,0.6))
+    drop-shadow(0 0 14px rgba(255,255,255,0.3));
+}
+
+/* Posiciones alrededor del borde */
+
+.e1{ top:-30px; left:-30px; }
+.e2{ top:-35px; right:15%; }
+.e3{ bottom:-35px; right:-30px; }
+
+.m1{ bottom:-35px; left:15%; }
+.m2{ top:40%; left:-45px; }
+  /* ================= CONFESIÓN VIDEO ================= */
+
+.confesion-section{
+  margin:100px 0 80px 0;
+  display:flex;
+  justify-content:center;
+}
+
+.confesion-contenedor{
+  width:70%;
+  max-width:500px;
+  text-align:left;
+}
+
+.confesion-frase{
+  font-family:'Lobster';
+  font-size:20px;
+  color:#195791; /* mismo color que los otros textos */
+  line-height:1.3;
+  margin-bottom:16px;
+max-width: 500px;
+  text-shadow:
+  0 0 6px rgba(120,170,220,1),
+  0 0 8px rgba(120,170,220,0.9),
+  0 0 18px rgba(120,170,220,0.7),
+  0 0 28px rgba(25,87,145,0.5);  
+}
+
+.video-link{
+  position:relative;
+  width:100%;
+  max-width:750px;
+}
+
+.video-link img{
+  width:100%;
+  display:block;
+  border-radius:18px;
+  box-shadow:-12px 16px 35px rgba(0,0,0,0.35);
+}
+
+.video-link a{
+  position:relative;
+  display:block;
+}
+
+.play-overlay{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-size:60px;
+  color:white;
+  background:rgba(0,0,0,0.5);
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.3s ease;
+}
+
+.video-link:hover .play-overlay{
+  background:rgba(0,0,0,0.7);
+  transform:translate(-50%, -50%) scale(1.1);
+}
+
+.cierre-en-fin{
+font-family:'Cathalia';
+font-size:24.5px; /* un poco más grande que catálogo */
+color:#A28329;
+text-align:center;
+margin-top:15px;
+margin-bottom:20px;
+
+text-shadow:
+0 1px 0 rgba(120,90,20,0.4),        /* sombra oscura sutil debajo */
+0 0 3px rgba(162,131,41,0.8),       /* brillo cercano */
+0 0 8px rgba(162,131,41,0.5);       /* halo más suave */
+}
+
+@media(max-width: 768px){
+.catalogo-grid{
+grid-template-columns:1fr;
+padding:0 20px;
+}
+.descripcion-grande{
+font-size:15px;
+}
+.descripcion-mas-grande{
+font-size:22px;
+}
+.sobre-mi-contenedor{
+  flex-direction:column;
+  gap:25px;
+  padding:0px 25px 30px 25px;
+}
+
+.sobre-mi-derecha{
+  font-size:16px;
+  text-align:center;
+}
+}
+
+@media (max-width:1024px){
+  .sobre-mi-contenedor{
+    gap:25px;
+  }
+}
+  
+@media (max-width: 768px){
+  .descripcion-grande,
+  .descripcion-mas-grande{
+    font-size:15px !important;
+  }
+  .sobre-mi-derecha{
+  margin-top: 10px;
+  }
+.sobre-mi-derecha{
+  width: 91%;
+  max-width: 91%;
+}
+}
+
+/* CONTENEDOR DEL TÍTULO */
+.principios-section{
+  padding-top:47px;
+}
+
+/* TÍTULO PRINCIPAL */
+.titulo-principios{
+  text-align:center;
+  font-family:'Halja';
+  font-size:55px;
+  font-weight:200;
+  color:#1f4e79;
+
+  margin:0;
+  line-height:1.1;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+
+  animation: titileoSuave 2s ease-in-out infinite alternate;
+}
+
+/* SUBTÍTULO */
+.sub-principios{
+  display:block;
+  margin-top:18px;
+
+  font-family:'NotoEthiopic';
+  font-size:22px;
+  font-weight:400;
+
+ color:#1f4e79;
+
+  margin:0;
+  line-height:1.1;
+
+  text-shadow:
+  0 0 6px rgba(120,170,220,0.9),
+  0 0 14px rgba(120,170,220,0.8),
+  0 0 25px rgba(25,87,145,0.6),
+  0 0 50px rgba(25,87,145,0.4);
+
+  animation: titileoSuave 2s ease-in-out infinite alternate;
+}
+
+.cierre-final{
+background-image:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url('fondo 2.jpeg');
+background-size:cover;
+background-position:center;
+padding:20px 0px;
+margin-top:110px;
+  border-radius:0;
+}
+
+.cierre-contenido{
+max-width:800px;
+margin:0 auto;
+}
+
+.sanemos{
+font-family:'HALJA'; /* la misma que usas en títulos góticos */
+font-size:45px;
+color:#cfd3da; /* plateado */
+text-align:left;
+  margin-top:5px;
+margin-bottom:10px;
+}
+
+.encaminemos{
+font-family:'NotoEthiopic';
+font-size:18px;
+color:#e2e5ea; /* plateado suave */
+text-align:left;
+font-weight:normal;
+margin:0;
+}
+
+.animar-titulo{
+opacity:0;
+transform:translateY(25px);
+transition:all 0.9s ease;
+}
+
+.animar-titulo.visible{
+opacity:1;
+transform:translateY(0);
+}
+  
+@media (max-width:768px){
+
+.cierre-final{
+width:100%;
+padding:12px 0;           /* controla lo delgado en móvil */
+background-size:cover;    /* mantiene la franja completa */
+background-position:center;
+}
+
+.cierre-contenido{
+width:100%;
+padding-left:20px;        /* margen interno para que el texto no pegue al borde */
+padding-right:20px;
+box-sizing:border-box;
+}
+
+.sanemos{
+font-size:clamp(24px,15vw,38px);   /* se adapta al ancho */
+  
+}
+
+.encaminemos{
+font-size:clamp(14px,3vw,18px);   /* más pequeño que el título */
+}
+}
+.footer-contacto{
+background:#ffffff;
+padding:25px 0 30px 0;
+}
+
+.footer-contenido{
+max-width:1100px;
+margin:0 auto;
+padding-left:40px;
+}
+
+.footer-titulo{
+font-family:'Lobster';
+font-size:28px;
+color:#A28329;
+
+text-shadow:
+0 1px 0 rgba(120,90,20,0.4),
+0 0 3px rgba(162,131,41,0.8),
+0 0 8px rgba(162,131,41,0.5);
+
+margin-bottom:20px;
+}
+
+.footer-redes{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.footer-linea{
+display:flex;
+align-items:center;
+gap:12px;
+font-family:'Glacial Indifference';
+font-size:16px;
+color:#444444; /* gris oscuro elegante */
+}
+
+.footer-linea img{
+width:16px;
+}
+
+.icono-whatsapp{
+width:14px;
+}
+
+@media (max-width:768px){
+
+.footer-contenido{
+padding-left:20px;
+}
+
+.footer-titulo{
+font-size:24px;
+}
+
+.footer-linea{
+font-size:15px;
+}
+
+}
+}
+
+/* CONTENEDOR */
+.sobre-mi-section{
+  position:relative;
+}
+
+/* ASEGURAR QUE EL CONTENIDO QUEDE ARRIBA */
+.sobre-mi-contenedor,
+.sobre-mi-title{
+  position:relative;
+  z-index:2;
+}
+
+.brillo-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.brillo-final img {
+  width: 120px; /* ajusta tamaño */
+  animation: brilloSuave 3s infinite ease-in-out;
+}
+
+/* efecto glow */
+@keyframes brilloSuave {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3))
+            drop-shadow(0 0 10px rgba(255,255,255,0.2));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.8))
+            drop-shadow(0 0 25px rgba(255,255,255,0.6));
+    transform: scale(1.05);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3))
+            drop-shadow(0 0 10px rgba(255,255,255,0.2));
+    transform: scale(1);
+  }
+}
+</style>
+<body>
+  
+<div class="estrellas-extra"></div>
+  
+<div class="hero-mini">
+  <img src="logo mariposa azul.jpeg" class="mini-logo">
+  <span class="mini-title">Mariposa Azul</span>
+</div>
+  
+<section id="sobre-mi" class="sobre-mi-section">
+  <div class="sobre-mi-title">
+    <img src="izquierda.png" class="sobre-img sobre-left">
+    <h2>Sobre Mí</h2>
+    <img src="derecha.png" class="sobre-img sobre-right">
+  </div>
+
+
+  <div class="sobre-mi-contenedor">
+
+  <!-- LADO IZQUIERDO -->
+  <div class="sobre-mi-izquierda">
+
+    <div class="foto-marco">
+
+      <img src="yo.jpeg" class="foto-scar">
+
+<img src="mariposa.png" class="mariposa scar-m1">
+<img src="mariposa.png" class="mariposa scar-m2">
+<img src="mariposa.png" class="mariposa scar-m3">
+
+    </div>
+
+    <div class="sobre-mi-nombre">
+      Hola, Soy Escarlet <br> 💜✨️
+    </div>
+
+  </div>
+
+  <!-- LADO DERECHO -->
+  <div class="sobre-mi-derecha">
+
+    <p>
+        Desde pequeña pareciera que mi camino fue el de cuidar y sostener a otros. Viví situaciones que me llevaron a asumir ese rol, e incluso antes de comprenderlo ya lo hacía desde y por amor. Por muchos años evadí mi verdadera yo 🧙🏻‍♀️, tanto por los prejuicios como por el miedo a lo desconocido y las experiencias espirituales que no sabía cómo explicar. Pero mientras más lo negaba, más fuerte se hacía el puente que quería que estuviera conectada con lo Divino, con Dios.
+    <span class="pausa"></span>    Hasta que un día me di cuenta de que estaba viviendo limitada y, en realidad, no era nada externo lo que me atemorizaba; era esa parte profunda de mí que pedía ser aceptada y que, al final, no era tan terrible como pensaba.
+   <span class="pausa"></span>    Mi proceso no ha sido lineal. Ha tenido subidas y bajadas, me cuestione el mundo espiritual y la "matrix" donde vivía haciéndome romper patrones generacionales. He sido puesta a prueba para recordar quién soy. He aprendido a transmutar, alquimizar y a renacer desde el dolor y mis propias heridas. Porque, como en la carta de La Torre (tarot), del caos también podemos reconstruirnos.
+    <span class="pausa"></span>    Al final, la sanación parte de reconciliarnos con esas partes donde quizá aún no ha llegado luz.
+    <span class="pausa"></span>    Hoy acepto mi camino de sanadora con la responsabilidad y el respeto que conlleva. Todo desde el amor incondicional que Dios puso en mi corazón para entregarlo al mundo, con la intención de acompañarte en TU PROCESO de encontrar claridad y herramientas reales que te ayuden a transformar TU VIDA. Ya que, si no estamos bien con nuestra fuente interna, difícilmente podremos construir una realidad plena afuera.
+    Yo te acompaño, te guio, te comprendo y te abrazo para que seas tu verdad, tu versión más consciente y, al mismo tiempo, más auténtica.
+    <span class="pausa"></span><span class="cierre-sobre-mi">
+No hay nada más poderoso que habitar tu esencia con libertad, con disfrute y en coherencia con quien realmente eres
+</span>
+    </p>
+
+  </div>
+
+</div> </section>
+  <section class="principios-section">
+
+<h2 class="titulo-principios animar-titulo">
+  Mis Principios<br>
+  <span class="sub-principios">reflejados en Mariposa Azul</span>
+</h2>
+<div class="principios-sticker">
+
+  <!-- Decoraciones -->
+  <img src="estrella.png" class="decor e1">
+  <img src="estrella.png" class="decor e2">
+  <img src="estrella.png" class="decor e3">
+  <img src="mariposa.png" class="decor m1">
+  <img src="mariposa.png" class="decor m2">
+
+  <!-- Contenido -->
+ <div class="principios-texto">
+
+  <p>
+    <strong>1. Enfoque terapéutico</strong>
+    Las terapias ofrecidas son complementarias y no sustituyen tratamiento médico, psicológico o psiquiátrico. Pueden integrar a otros procesos de salud para mayor armonización y sanación.
+ <span class="pausa"></span>
+    <strong>2. Responsabilidad individual</strong>
+    Cada proceso es único e individual. Los resultados pueden variar según la apertura, disposición y compromiso del consultante. Yo te guío y te acompaño en el proceso, pero es fundamental que realices tu trabajo interno y utilices las herramientas entregadas durante las sesiones.
+ <span class="pausa"></span>
+    <strong>3. Ética energética</strong>
+    No se realizan trabajos destinados a dañar, manipular o interferir en la voluntad de terceros.
+  <span class="pausa"></span>
+    <strong>4. Autonomía y conciencia</strong>
+    No se fomentan dependencias energéticas. El acompañamiento está orientado a fortalecer la autonomía, el autoconocimiento y el poder personal de cada persona.
+  </p>
+
+</div>
+
+</div>
+
+</section>
+  <section class="confesion-section">
+
+  <div class="confesion-contenedor">
+
+    <div class="confesion-frase">
+      Y una confesión loca 🤪:
+     <span class="pausa"></span>
+      Siempre que escucho esta canción, pienso en el Ser que será el Amor de mi vida.
+    </div>
+
+<div class="video-link">
+  <a href="https://www.youtube.com/watch?v=-KGG25i38hw" target="_blank">
+
+    <img 
+      src="https://img.youtube.com/vi/-KGG25i38hw/maxresdefault.jpg" 
+      alt="Ver en YouTube">
+
+    <div class="play-overlay">
+      ▶
+    </div>
+
+  </a>
+</div>
+
+</section>
+
+ <section class="cierre-en-fin">
+<div class="cierre-en-fin animar-enfin">
+<span>En fin...</span>
+</div>
+</section>
+<div class="brillo-final">
+  <img src="manos.png" alt="decoración mágica">
+</div>
+<section class="cierre-final">
+  <div class="cierre-contenido">
+    <h2 class="sanemos">¿Sanemos Juntxs?</h2>
+    <p class="encaminemos">Encaminemos tu proceso</p>
+  </div>
+</section>
+  <section class="footer-contacto">
+
+  <div class="footer-contenido">
+
+    <div class="footer-titulo">
+      Encuéntrame en:
+    </div>
+
+    <div class="footer-redes">
+
+      <div class="footer-linea">
+        <img src="instagram.png" alt="Instagram">
+        <span>@mariposaazul__</span>
+      </div>
+
+      <div class="footer-linea">
+        <img src="tiktok.png" alt="TikTok">
+        <span>@mariposaazul.__</span>
+      </div>
+
+      <div class="footer-linea">
+<img src="whatsapp.png" class="icono-whatsapp" alt="WhatsApp">
+        <span>+56 9 2805 5904</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  
+  <script id="8n3k2x">
+const elementos = document.querySelectorAll('.animar-titulo');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+elementos.forEach(el => observer.observe(el));
+    
+</script> </body> </html>
